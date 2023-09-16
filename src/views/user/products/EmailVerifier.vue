@@ -46,7 +46,7 @@
               </defs>
             </svg>
 
-            <h1 class="font-primary text-[40.465px] font-bold py-4">
+            <h1 class="font-primary text-[36px] md:text-[40.465px] font-bold py-4">
               Email Checker
             </h1>
             <p
@@ -59,7 +59,9 @@
         <div
           class="md:w-6/12 w-full bg-white rounded-xl flex flex-col justify-center items-center px-5 shadow-2xl"
         >
-          <div class="font-primary text-[32px] text-center font-semibold p-6 sm:py-12">
+          <div
+            class="font-primary text-[28px] sm:text-[32px] text-center font-semibold p-6 py-6 sm:py-12 "
+          >
             Find email by name
           </div>
           <div class="flex">
@@ -90,7 +92,9 @@
           </button>
         </div>
       </div>
-      <div class="flex flex-wrap justify-center opacity-30 mx-auto my-14 sm:my-28 z-10">
+      <div
+        class="flex flex-wrap justify-center opacity-30 mx-auto my-14 sm:my-28 z-10"
+      >
         <div class="px-8 py-2">
           <svg
             width="143"
@@ -356,7 +360,7 @@
     </div>
     <div class="flex flex-col justify-center bg-[#ecf4fa] py-12">
       <div class="w-3/4 mx-auto flex flex-col items-center relative">
-        <h1 class="font-primary text-[40px] text-center font-extrabold">
+        <h1 class="font-primary text-[36px] sm:text-[40px] leading-[1.2] text-center font-extrabold">
           Make new connections.
         </h1>
         <p
@@ -381,9 +385,9 @@
     </div>
 
     <div
-      class="flex flex-col items-center justify-between container mx-auto my-16 sm:my-32 z-10"
+      class="flex flex-col items-center justify-between container mx-auto my-8 sm:my-16 sm:my-32 z-10"
     >
-      <h1 class="text-[40px] font-bold pb-12 text-center">
+      <h1 class="text-[36px] sm:text-[40px] leading-[1.2] font-bold pb-12 text-center">
         Use Email Finder within your <br />
         own workflow.
       </h1>
@@ -392,9 +396,11 @@
       >
         <img src="@/assets/images/template.png" alt="" class="w-[540px]" />
         <div class="flex flex-col py-8 px-3 max-w-[500px]">
-          <h1 class="text-[40px] font-bold">Bulk Email Finder</h1>
+          <h1 class="text-[36px] sm:text-[40px] leading-[1.2] font-bold">Bulk Email Finder</h1>
 
-          <p class="font-primary text-[18px] sm:text-[24px] font-medium text-[#64607D] py-5">
+          <p
+            class="font-primary text-[18px] sm:text-[24px] font-medium text-[#64607D] py-5"
+          >
             Need more than one email address? Find emails in bulk.
           </p>
           <div>
@@ -410,9 +416,11 @@
         class="flex max-lg:flex-col-reverse max-lg:mb-5 justify-between container items-center my-10"
       >
         <div class="flex flex-col max-w-[500px] px-5 pt-10">
-          <h1 class="text-[40px] font-bold">Email Finder API</h1>
+          <h1 class="text-[36px] sm:text-[40px] leading-[1.2] font-bold">Email Finder API</h1>
 
-          <p class="font-primary text-[18px] sm:text-[24px] font-medium text-[#64607D] py-5">
+          <p
+            class="font-primary text-[18px] sm:text-[24px] font-medium text-[#64607D] py-5"
+          >
             Bring Calrifio into your own product using the Email Finder API.
           </p>
           <div>
@@ -438,8 +446,10 @@
           class="w-[540px]"
         />
         <div class="flex flex-col max-w-[500px] px-5 pt-10">
-          <h1 class="text-[40px] font-bold">Google Sheets add-on</h1>
-          <p class="font-primary text-[18px] sm:text-[24px] font-medium text-[#64607D] py-5">
+          <h1 class="text-[32px] sm:text-[40px] leading-[1.2] font-bold">Google Sheets add-on</h1>
+          <p
+            class="font-primary text-[18px] sm:text-[24px] font-medium text-[#64607D] py-5"
+          >
             Find and verify email addresses directly in Google Sheets.
           </p>
           <div>
@@ -454,7 +464,7 @@
     </div>
     <div class="bg-[#f9fafb]">
       <div
-        class="container flex max-lg:flex-col max-lg:mb-5 justify-between items-center mx-auto py-24 z-10 relative"
+        class="container flex max-lg:flex-col max-lg:mb-5 justify-between items-center mx-auto py-10 sm:py-24 z-10 relative"
       >
         <div class="absolute left-0 top-[81px]">
           <svg
@@ -495,7 +505,9 @@
         <h1 class="font-primary text-3xl font-semibold pb-5 text-center px-3">
           Common questions about the Email Finder
         </h1>
-        <p class="text-[#64607D] font-primary text-[20px] text-center mb-16 px-3">
+        <p
+          class="text-[#64607D] font-primary text-[20px] text-center mb-16 px-3"
+        >
           If you can't find the answer to your question here, visit the
           dedicated section in our Help Center.
         </p>
@@ -661,7 +673,7 @@
           <p class="text-[#2F80ED] text-[16px] font-medium font-primary">
             Browser Extension
           </p>
-          <h1 class="py-6 font-primary text-[36px] font-medium">
+          <h1 class="py-6 font-primary text-[28px] sm:text-[36px] font-medium">
             Bring <span class="text-[#E24949] font-bold">Calrifo</span> with
             you.
           </h1>
@@ -828,7 +840,8 @@
             width="680"
             viewBox="0 0 680 422"
             fill="none"
-            xmlns="http://www.w3.org/2000/svg" class="w-full"
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-full"
           >
             <g clip-path="url(#clip0_2_14563)">
               <mask
