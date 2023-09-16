@@ -804,8 +804,8 @@
       <div
         class="flex max-lg:flex-col-reverse max-lg:mb-5 justify-between container items-center"
       >
-        <img src="@/assets/images/template.png" alt="" class="w-[540px]" />
-        <div class="flex flex-col py-8 max-w-[500px] px-3">
+        <img src="@/assets/images/template.png" alt="" class="w-1/2" />
+        <div class="flex flex-col py-8 w-1/2 pl-[121px]">
           <h1 class="text-[40px] font-bold">Bulk Domain Search</h1>
 
           <p class="font-primary text-[18px] sm:text-[24px] font-medium text-[#64607D] py-2 sm:py-5">
@@ -824,7 +824,7 @@
       <div
         class="flex max-lg:flex-col max-lg:mb-5 justify-between container items-center my-0 sm:my-10"
       >
-        <div class="flex flex-col max-w-[500px] px-5 py-10">
+        <div class="flex flex-col w-1/2 pr-[121px] py-10">
           <h1 class="text-[40px] font-bold">Domain Search API</h1>
 
           <p class="font-primary text-[18px] sm:text-[24px] font-medium text-[#64607D] py-2 sm:py-5">
@@ -842,7 +842,7 @@
         <img
           src="@/assets/images/domain-verifier/2.png"
           alt=""
-          class="w-[540px]"
+          class="w-1/2"
         />
       </div>
       <div
@@ -851,9 +851,9 @@
         <img
           src="@/assets/images/domain-verifier/2.png"
           alt=""
-          class="w-[540px]"
+          class="w-1/2"
         />
-        <div class="flex flex-col max-w-[500px] px-5 py-10">
+        <div class="flex flex-col w-1/2 pl-[121px] py-10">
           <h1 class="text-[40px] font-bold">Browser Extension</h1>
           <p class="font-primary text-[18px] sm:text-[24px] font-medium text-[#64607D] py-2 sm:py-5">
             Find email addresses behind the websites you're browsing with a
@@ -873,14 +873,14 @@
       <div
         class="container flex max-lg:flex-col max-lg:mb-5 justify-between items-center mx-auto py-12 sm:py-24"
       >
-        <div class="max-w-[580px] pb-10 px-3">
+        <div class="w-1/2 pb-10">
           <p class="text-[#9B51E0] font-primary text-[16px] font-semibold pb-3">
             Used and loved by 3+ million users.
           </p>
           <h1 class="font-primary text-3xl font-semibold pb-5">
             We’re just getting started
           </h1>
-          <p class="text-[#64607D] font-primary text-[20px]">
+          <p class="text-[#64607D] font-primary text-[20px] w-10/12">
             <span class="text-[#9B51E0]">Calrifo</span> has contact information
             for websites with less traffic than some of the top contact-finding
             tools out there.
@@ -889,7 +889,7 @@
         <img
           src="@/assets/images/domain-verifier/4.png"
           alt=""
-          class="w-[500px]"
+          class="w-1/2 pl-[64px]"
         />
       </div>
     </div>
@@ -1069,7 +1069,7 @@
       <div
         class="container mx-auto sm:my-24 rounded-xl bg-[#F9FAFB] flex max-lg:flex-col justify-between items-center"
       >
-        <div class="p-8 sm:p-16 flex flex-col max-w-[700px]">
+        <div class="p-8 sm:p-16 flex flex-col 5/12">
           <p class="text-[#9B51E0] text-[16px] font-medium font-primary">
             Browser Extension
           </p>
@@ -1235,7 +1235,7 @@
             <b>4.7</b> from 12,000+ reviews • 600,000+ users
           </p>
         </div>
-        <div class="max-w-[680px] py-5 sm:py-10">
+        <div class="w-7/12 py-5 sm:py-10">
           <svg
             width="680"
             viewBox="0 0 680 422"
