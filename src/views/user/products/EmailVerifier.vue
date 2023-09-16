@@ -46,7 +46,9 @@
               </defs>
             </svg>
 
-            <h1 class="font-primary text-[36px] md:text-[40.465px] font-bold py-4">
+            <h1
+              class="font-primary text-[36px] md:text-[40.465px] font-bold py-4"
+            >
               Email Checker
             </h1>
             <p
@@ -60,7 +62,7 @@
           class="md:w-6/12 w-full bg-white rounded-xl flex flex-col justify-center items-center px-5 shadow-2xl"
         >
           <div
-            class="font-primary text-[28px] sm:text-[32px] text-center font-semibold p-6 py-6 sm:py-12 "
+            class="font-primary text-[28px] sm:text-[32px] text-center font-semibold p-6 py-6 sm:py-12"
           >
             Find email by name
           </div>
@@ -360,7 +362,9 @@
     </div>
     <div class="flex flex-col justify-center bg-[#ecf4fa] py-12">
       <div class="w-3/4 mx-auto flex flex-col items-center relative">
-        <h1 class="font-primary text-[36px] sm:text-[40px] leading-[1.2] text-center font-extrabold">
+        <h1
+          class="font-primary text-[36px] sm:text-[40px] leading-[1.2] text-center font-extrabold"
+        >
           Make new connections.
         </h1>
         <p
@@ -385,78 +389,73 @@
     </div>
 
     <div
-      class="flex flex-col items-center justify-between container mx-auto my-8 sm:my-16 sm:my-32 z-10"
+      class="flex flex-col items-center justify-between container mx-auto my-16 sm:my-32 z-10"
     >
-      <h1 class="text-[36px] sm:text-[40px] leading-[1.2] font-bold pb-12 text-center">
-        Use Email Finder within your <br />
-        own workflow.
+      <h1 class="text-[40px] font-bold pb-12 text-center">
+        Find contacts manually or <br />
+        automate.
       </h1>
       <div
-        class="flex max-lg:flex-col max-lg:mb-5 justify-between container items-center"
+        class="flex max-lg:flex-col-reverse max-lg:mb-5 justify-between container items-center"
       >
-        <img src="@/assets/images/template.png" alt="" class="w-[540px]" />
-        <div class="flex flex-col py-8 px-3 max-w-[500px]">
-          <h1 class="text-[36px] sm:text-[40px] leading-[1.2] font-bold">Bulk Email Finder</h1>
+        <img src="@/assets/images/template.png" alt="" class="w-1/2" />
+        <div class="flex flex-col py-8 w-1/2 pl-[121px]">
+          <h1 class="text-[40px] font-bold">Bulk Domain Search</h1>
 
           <p
-            class="font-primary text-[18px] sm:text-[24px] font-medium text-[#64607D] py-5"
+            class="font-primary text-[18px] sm:text-[24px] font-medium text-[#64607D] py-2 sm:py-5"
           >
-            Need more than one email address? Find emails in bulk.
+            Upload your list of companies or websites and get a list of verified
+            email addresses.
           </p>
           <div>
             <button
-              class="bg-[#2F80ED] text-white text-[21px] rounded-lg font-primary py-2 sm:py-5 px-5"
+              class="bg-[#9B51E0] text-white text-[21px] rounded-lg font-primary py-2 sm:py-5 px-5"
             >
-              Bulk Email Finder
+              Bulk Domain Search
             </button>
           </div>
         </div>
       </div>
       <div
-        class="flex max-lg:flex-col-reverse max-lg:mb-5 justify-between container items-center my-10"
+        class="flex max-lg:flex-col max-lg:mb-5 justify-between container items-center my-0 sm:my-10"
       >
-        <div class="flex flex-col max-w-[500px] px-5 pt-10">
-          <h1 class="text-[36px] sm:text-[40px] leading-[1.2] font-bold">Email Finder API</h1>
+        <div class="flex flex-col w-1/2 pr-[121px] py-10">
+          <h1 class="text-[40px] font-bold">Domain Search API</h1>
 
           <p
-            class="font-primary text-[18px] sm:text-[24px] font-medium text-[#64607D] py-5"
+            class="font-primary text-[18px] sm:text-[24px] font-medium text-[#64607D] py-2 sm:py-5"
           >
-            Bring Calrifio into your own product using the Email Finder API.
+            Get email addresses and dozens of other data points using a simple
+            API call.
           </p>
           <div>
             <button
-              class="bg-[#2F80ED] text-white text-[21px] rounded-lg font-primary py-2 sm:py-5 px-5"
+              class="bg-[#9B51E0] text-white text-[21px] rounded-lg font-primary py-2 sm:py-5 px-5"
             >
-              Email Finder API
+              Domain Search API
             </button>
           </div>
         </div>
-        <img
-          src="@/assets/images/domain-verifier/2.png"
-          alt=""
-          class="w-[540px]"
-        />
+        <img src="@/assets/images/domain-verifier/2.png" alt="" class="w-1/2" />
       </div>
       <div
-        class="flex max-lg:flex-col max-lg:mb-5 justify-between container items-center my-10"
+        class="flex max-lg:flex-col-reverse max-lg:mb-5 justify-between container items-center my-5 sm:my-10"
       >
-        <img
-          src="@/assets/images/domain-verifier/2.png"
-          alt=""
-          class="w-[540px]"
-        />
-        <div class="flex flex-col max-w-[500px] px-5 pt-10">
-          <h1 class="text-[32px] sm:text-[40px] leading-[1.2] font-bold">Google Sheets add-on</h1>
+        <img src="@/assets/images/domain-verifier/2.png" alt="" class="w-1/2" />
+        <div class="flex flex-col w-1/2 pl-[121px] py-10">
+          <h1 class="text-[40px] font-bold">Browser Extension</h1>
           <p
-            class="font-primary text-[18px] sm:text-[24px] font-medium text-[#64607D] py-5"
+            class="font-primary text-[18px] sm:text-[24px] font-medium text-[#64607D] py-2 sm:py-5"
           >
-            Find and verify email addresses directly in Google Sheets.
+            Find email addresses behind the websites you're browsing with a
+            single click.
           </p>
           <div>
             <button
-              class="bg-[#2F80ED] text-white text-[21px] rounded-lg font-primary py-2 sm:py-5 px-5"
+              class="bg-[#9B51E0] text-white text-[21px] rounded-lg font-primary py-2 sm:py-5 px-5"
             >
-              Get the add-on
+              Add Hunter to Chrome
             </button>
           </div>
         </div>
