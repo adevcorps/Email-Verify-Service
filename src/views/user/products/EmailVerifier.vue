@@ -398,8 +398,8 @@
       <div
         class="flex max-lg:flex-col-reverse max-lg:mb-5 justify-between container items-center"
       >
-        <img src="@/assets/images/template.png" alt="" class="w-1/2" />
-        <div class="flex flex-col py-8 w-1/2 pl-[121px]">
+        <img src="@/assets/images/template.png" alt="" class="w-full lg:w-1/2" />
+        <div class="flex flex-col py-8 w-full lg:w-1/2  px-5 lg:pl-[121px] ">
           <h1 class="text-[40px] font-bold">Bulk Domain Search</h1>
 
           <p
@@ -420,7 +420,7 @@
       <div
         class="flex max-lg:flex-col max-lg:mb-5 justify-between container items-center my-0 sm:my-10"
       >
-        <div class="flex flex-col w-1/2 pr-[121px] py-10">
+        <div class="flex flex-col w-full lg:w-1/2 px-5 lg:pr-[121px] py-10">
           <h1 class="text-[40px] font-bold">Domain Search API</h1>
 
           <p
@@ -437,13 +437,13 @@
             </button>
           </div>
         </div>
-        <img src="@/assets/images/domain-verifier/2.png" alt="" class="w-1/2" />
+        <img src="@/assets/images/domain-verifier/2.png" alt="" class="w-full lg:w-1/2" />
       </div>
       <div
         class="flex max-lg:flex-col-reverse max-lg:mb-5 justify-between container items-center my-5 sm:my-10"
       >
-        <img src="@/assets/images/domain-verifier/2.png" alt="" class="w-1/2" />
-        <div class="flex flex-col w-1/2 pl-[121px] py-10">
+        <img src="@/assets/images/domain-verifier/2.png" alt="" class="w-full lg:w-1/2" />
+        <div class="flex flex-col w-full lg:w-1/2 px-5 lg:pl-[121px] py-10">
           <h1 class="text-[40px] font-bold">Browser Extension</h1>
           <p
             class="font-primary text-[18px] sm:text-[24px] font-medium text-[#64607D] py-2 sm:py-5"
