@@ -181,7 +181,7 @@ const langToggle = () => {
               $t("header.contact")
             }}</span></router-link
           >
-          <router-link to="/" class="">
+          <a class="">
             <div class="w-full items-center justify-center">
               <div class="group cursor-pointer">
                 <div class="flex items-center justify-between space-x-5 bg-white px-5 max-xl:px-2">
@@ -214,25 +214,26 @@ const langToggle = () => {
                   onClick=""
                 >
                   <a
-                    class="my-1 block border-b border-gray-100 py-1 font-base lg:mx-4 hover:text-header-selected md:mx-2"
+                    class="my-1 block border-b border-gray-100 py-1 font-base lg:mx-4 text-primary hover:text-hover md:mx-2"
+                    
                     @click="handleLocation('en')"
                     >English</a
                   >
 
                   <a
-                    class="my-1 block border-b border-gray-100 py-1 font-base lg:mx-4 text-gray-500 hover:text-header-selected md:mx-2"
+                    class="my-1 block border-b border-gray-100 py-1 font-base lg:mx-4 text-primary hover:text-hover md:mx-2"
                     @click="handleLocation('pt')"
                     >Português</a
                   >
                   <a
-                    class="my-1 block border-b border-gray-100 py-1 font-base lg:mx-4 text-gray-500 hover:text-header-selected md:mx-2"
+                    class="my-1 block border-b border-gray-100 py-1 font-base lg:mx-4 text-primary hover:text-hover md:mx-2"
                     @click="handleLocation('es')"
                     >Español
                   </a>
                 </div>
               </div>
             </div>
-          </router-link>
+          </a>
         </div>
         <div class="py-5 max-lg:hidden">
           <router-link to="/login">
