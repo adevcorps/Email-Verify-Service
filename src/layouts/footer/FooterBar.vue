@@ -2,13 +2,13 @@
   <div class="relative mt-9">
     <img
       src="../../assets/images/footer/footer-red.png"
-      class="absolute z-[-2] max-h-[550px] w-full max-xl:h-[100%]"
+      class="absolute z-[-2] max-h-[550px] w-full max-md:max-h-none max-md:object-cover max-xl:h-[100%]"
     />
     <img
       src="../../assets/images/footer/footer-black.png"
       class="absolute w-full z-[-1] max-h-[550px] bottom-0 top-5 max-md:max-h-none max-md:object-cover max-xl:h-[100%]"
     />
-    <div class="container mx-auto z-20 pt-[160px] max-md:pt-10">
+    <div class="container mx-auto z-20 pt-[160px]">
       <div class="flex flex-row justify-between max-md:flex-col max-md:px-5">
         <div class="w-4/12 max-md:w-full">
           <div class="flex flex-col">
