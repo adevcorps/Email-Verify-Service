@@ -1,6 +1,6 @@
 <template>
   <div
-    class="my-2  bg-white border rounded-xl bg-pricing-card-bg dark:bg-gray-800 dark:border-gray-700 max-md:w-[299px] max-xl:mx-2 "
+    class="my-2 w-[305px] bg-white border rounded-xl bg-pricing-card-bg dark:bg-gray-800 dark:border-gray-700 max-md:w-[299px] max-xl:mx-2 "
   >
     <div class="text-center mt-8">
       <p class="font-primary text-2xl font-bold text-card-subtitle">
@@ -14,7 +14,7 @@
       <p class="mb-5 text-sm font-primary font-semibold dark:text-white text-center">
         ONE TIME PRICE
       </p>
-      <p class="text-5xl font-primary font-semibold mb-5">only ${{price}}</p>
+      <p class="text-4xl font-primary font-semibold mb-5">only ${{price}}</p>
       <p class="text-[13.154px] text-[#64607D] font-bold font-primary mb-3">
         YOU CAN USE FOR
       </p>

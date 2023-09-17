@@ -1,16 +1,12 @@
 <template>
-  <section class="relative bg-[url('@/assets/images/home/real-time/bg.png')] bg-no-repeat bg-cover bg-center">
-    <!-- <img
-      src="@/assets/images/home/real-time/bg.png"
-      class="absolute w-full object-fill z-0 right-0 top-0 left-0"
-    /> -->
+  <section class="relative bg-[url('@/assets/images/home/real-time/bg.png')] bg-100-100 bg-no-repeat bg-center max-lg:bg-cover">
     <img
       src="@/assets/images/home/bulk-email/Polygon-1.png"
       class="absolute left-0 bottom-3"
     />
     <img src="@/assets/images/home/bulk-email/poly2.png" class="absolute right-0 top-5" />
     <div class="mx-auto container max-xl:max-w-[100%] max-xl:px-5">
-      <div class="bg-contain justify-between relative flex flex-wrap mt-24 py-20 max-md:mt-0 pt-5">
+      <div class="bg-contain justify-between relative flex flex-wrap mt-24 py-20 max-md:mt-0 pt-20 max-lg:pt-10">
         <div
           class="lg:w-5/12 prose font-primary md:w-full sm:w-full sm:mb-5 md:mb-5 z-10"
         >

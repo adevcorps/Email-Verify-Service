@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from "vue-router";
+import { createRouter, createWebHistory, } from "vue-router";
 import Style from "@/views/admin/StyleView.vue";
 import HomePageLayout from '@/layouts/HomePageLayout.vue';
 import AdminHome from "@/views/admin/HomeView.vue";
@@ -13,7 +13,31 @@ const routes = [
         path: '/',
         name: 'home-page',
         component: () => import('@/views/user/HomePage.vue')
-      }
+      },
+      {
+        meta: {
+          title: "DomainVerifier",
+        },
+        path: "/domain-checker",
+        name: "domain-checker",
+        component: () => import("@/views/user/products/DomainVerifier.vue"),
+      },
+      {
+        meta: {
+          title: "EmailVerifier",
+        },
+        path: "/email-checker",
+        name: "email-checker",
+        component: () => import("@/views/user/products/EmailVerifier.vue"),
+      },
+      {
+        meta: {
+          title: "BulkEmailVerifier",
+        },
+        path: "/bulk-email-checker",
+        name: "bulk-email-checker",
+        component: () => import("@/views/user/products/BulkEmailVerifier.vue"),
+      },
     ]
   },
   {
@@ -64,7 +88,7 @@ const routes = [
     },
     path: "/responsive",
     name: "responsive",
-    component: () => import("@/views/admin/ResponsiveView.vue"),
+    component: () => import("@/views/admin/auth/ResponsiveView.vue"),
   },
   {
     meta: {
@@ -72,7 +96,47 @@ const routes = [
     },
     path: "/login",
     name: "login",
-    component: () => import("@/views/admin/LoginView.vue"),
+    component: () => import("@/views/admin/auth/LoginPage.vue"),
+  },
+  {
+    meta: {
+      title: "Register",
+    },
+    path: "/register",
+    name: "register",
+    component: () => import("@/views/admin/auth/RegisterPage.vue"),
+  },
+  {
+    meta: {
+      title: "Forgot Password",
+    },
+    path: "/fogot-password",
+    name: "fogot-password",
+    component: () => import("@/views/admin/auth/ForgotPassword.vue"),
+  },
+  {
+    meta: {
+      title: "Check Email",
+    },
+    path: "/check-email",
+    name: "check-email",
+    component: () => import("@/views/admin/auth/CheckEmail.vue"),
+  },
+  {
+    meta: {
+      title: "Set New Password",
+    },
+    path: "/set-new-password",
+    name: "set-new-password",
+    component: () => import("@/views/admin/auth/SetNewPassword.vue"),
+  },
+  {
+    meta: {
+      title: "PasswordReset",
+    },
+    path: "/reset-password",
+    name: "reset-password",
+    component: () => import("@/views/admin/auth/PasswordReset.vue"),
   },
   {
     meta: {
@@ -85,7 +149,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes,
   scrollBehavior(to, from, savedPosition) {
     return savedPosition || { top: 0 };

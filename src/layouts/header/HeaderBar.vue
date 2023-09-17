@@ -101,28 +101,27 @@ const langToggle = () => {
                   class="invisible absolute z-50 flex flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible"
                   onClick=""
                 >
-                  <a
+                  <router-link to="/domain-checker"
                     class="my-1 block border-b border-gray-100 py-1 font-primary text-primary lg:mx-4 hover:text-hover md:mx-2"
-                    >Domain Verifier</a
+                    >Domain Verifier</router-link
                   >
 
-                  <a
+                  <router-link to="/email-checker"
                     class="my-1 block border-b border-gray-100 py-1 font-primary lg:mx-4 text-primary hover:text-hover md:mx-2"
-                    >Email Verifier</a
+                    >Email Verifier</router-link
                   >
-                  <a
+                  <router-link to="/bulk-email-checker"
                     class="my-1 block border-b border-gray-100 py-1 font-primary lg:mx-4 text-primary hover:text-hover md:mx-2"
                     >Bulk Email Verifier
-                  </a>
-                  <a
+                  </router-link>
+                  <router-link to="/integration"
                     class="my-1 block border-b border-gray-100 py-1 font-primary lg:mx-4 text-primary hover:text-hover md:mx-2"
                     >Integration
-                  </a>
+                  </router-link>
                 </div>
               </div>
             </div>
           </a>
-
           <a to="/">
             <div class="w-full items-center justify-center bg-gray-200">
               <div class="group cursor-pointer">
@@ -160,14 +159,14 @@ const langToggle = () => {
                     >Document</router-link
                   >
 
-                  <a
+                  <router-link to="api-doc"
                     class="my-1 block border-b border-gray-100 py-1 font-primary text-primary lg:mx-4 text-gray-500 hover:text-hover md:mx-2"
-                    >API Integration</a
+                    >API Integration</router-link
                   >
-                  <a
+                  <router-link to="faq"
                     class="my-1 block border-b border-gray-100 py-1 font-primary text-primary lg:mx-4 text-gray-500 hover:text-hover md:mx-2"
                     >FAQ
-                  </a>
+                  </router-link>
                 </div>
               </div>
             </div>
@@ -236,14 +235,18 @@ const langToggle = () => {
           </router-link>
         </div>
         <div class="py-5 max-lg:hidden">
+          <router-link to="/login">
           <button
             class="px-5 font-bold font-primary hover:text-primary delay-150 duration-300 max-xl:px-2"
           >
             {{ $t("header.login") }}
           </button>
-          <button class="py-2 px-8 bg-[#E24949] text-white rounded-full font-bold max-xl:px-4">
-            {{ $t("header.register") }}
-          </button>
+          </router-link>
+          <router-link to="/register">
+            <button class="py-2 px-8 bg-[#E24949] text-white rounded-full font-bold max-xl:px-4">
+              {{ $t("header.register") }}
+            </button>
+          </router-link>
         </div>
       </div>
     </div>

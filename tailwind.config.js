@@ -6,13 +6,13 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   darkMode: "class", // or 'media' or 'class'
   theme: {
-    // screens: {
-    //   'sm': 'sm-max',
-    //   'md': '768px',
-    //   'lg': '1024px',
-    //   'xl': '1280px',
-    //   '2xl': '1440px'
-    // },
+    backgroundSize: {
+      'auto': 'auto',
+      'cover': 'cover',
+      'contain': 'contain',
+      '100-100': '100% 100%',
+      '16': '4rem',
+    },
     asideScrollbars: {
       light: "light",
       gray: "gray",

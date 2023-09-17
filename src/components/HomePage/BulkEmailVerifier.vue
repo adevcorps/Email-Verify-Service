@@ -1,9 +1,5 @@
 <template>
-  <section class="relative bg-[url('@/assets/images/home/bulk-email/bg.png')] bg-no-repeat bg-cover bg-center max-md:px-5 max-md:pb-5" >
-    <!-- <img
-      src="@/assets/images/home/bulk-email/bg.png"
-      class="absolute w-full object-fill z-0 right-0 top-0 left-0"
-    /> -->
+  <section class="relative bg-[url('@/assets/images/home/bulk-email/bg.png')] bg-no-repeat bg-100-100 bg-center max-lg:bg-cover max-md:px-5 max-md:pb-5" >
     <img
       src="@/assets/images/home/bulk-email/Polygon-1.png"
       class="absolute left-0 bottom-3"
