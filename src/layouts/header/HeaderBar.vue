@@ -329,8 +329,7 @@ const langToggle = () => {
               :class="productSub ? 'block' : 'hidden'"
             >
               <li>
-                <router-link
-                  to="/domain-verifier"
+                <router-link to="/domain-checker"
                   class="font-primary flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                 >
                   Domain verifier
@@ -338,7 +337,7 @@ const langToggle = () => {
               </li>
               <li>
                 <router-link
-                  to="/email-verifier"
+                  to="/email-checker"
                   class="font-primary flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                 >
                   Email verifier
@@ -346,7 +345,7 @@ const langToggle = () => {
               </li>
               <li>
                 <router-link
-                  to="/bulk-domain-verifier"
+                  to="/bulk-email-checker"
                   class="font-primary flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                 >
                   Bulk Email verifier
@@ -494,7 +493,7 @@ const langToggle = () => {
               </li>
               <li>
                 <a
-                  to="/email-verifier"
+                  
                   class="font-primary flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                   @click="handleLocation('pt')"
                 >
@@ -503,7 +502,7 @@ const langToggle = () => {
               </li>
               <li>
                 <a
-                  to="/bulk-domain-verifier"
+                  
                   class="font-primary flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                   @click="handleLocation('es')"
                 >
@@ -518,7 +517,7 @@ const langToggle = () => {
         <div class="pt-6 flex flex-col">
           <router-link to="/login" class="w-full">
           <button
-            class="w-full p-5 font-bold font-primary hover:text-primary delay-150 duration-300 max-lg:w-8"
+            class="w-full p-5 font-bold font-primary hover:text-primary delay-150 duration-300"
           >
             {{ $t("header.login") }}
           </button>
