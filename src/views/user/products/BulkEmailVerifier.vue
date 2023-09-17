@@ -1,8 +1,8 @@
 <template>
   <div class="overflow-hidden">
-    <div class="flex flex-col bg-[#f4f8fe] relative">
+    <div class="flex flex-col bg-[#f7fafe] relative">
       <div
-        class="flex flex-col md:flex-row items-center justify-between container mx-auto my-8 sm:my-32 z-10 px-8"
+        class="flex flex-col md:flex-row items-center justify-between container mx-auto my-16 sm:my-32 z-10 px-8"
       >
         <div class="md:w-5/12 w-full">
           <div class="flex flex-col">
@@ -50,21 +50,25 @@
               </defs>
             </svg>
 
-            <h1 class="font-primary text-[40.465px] font-bold py-4">
-              Bulk Email Verifier
+            <h1
+              class="font-primary text-[36px] md:text-[40.465px] font-bold py-4"
+            >
+            Bulk Email Verifier
             </h1>
             <p
               class="font-primary text-[18px] sm:text-[24px] font-medium text-[#64607D] mb-5 md:mb-0"
             >
-              Verify any email address with the most complete email checker.
+            Verify any email address with the most complete email checker.
             </p>
           </div>
         </div>
         <div
           class="md:w-6/12 w-full bg-white rounded-xl flex flex-col justify-center items-center px-5 shadow-2xl"
         >
-          <div class="font-primary text-[32px] font-semibold py-6 sm:py-12">
-            Verify email
+          <div
+            class="font-primary text-[28px] sm:text-[32px] text-center font-semibold p-6 py-6 sm:py-12"
+          >
+          Verify email
           </div>
           <input
             type="text"
@@ -74,14 +78,16 @@
             class="p-5 my-6 rounded-lg border border-[#CDCDCD] border-solid shadow-sm text-[#333] font-primary text-[18px] w-full"
           />
           <button
-            class="bg-[#E24949] text-white text-[21px] rounded-lg font-primary py-3 sm:py-5 w-full mb-12"
+            class="bg-[#E24949] text-white text-[21px] rounded-lg font-primary py-2 sm:py-5 w-full mb-12"
           >
           Verify
           </button>
         </div>
       </div>
-      <div class="flex flex-wrap justify-center opacity-30 mx-auto my-14 sm:my-28 z-10">
-        <div class="px-8">
+      <div
+        class="flex flex-wrap justify-center opacity-30 mx-auto mb-14 sm:mb-28 z-10"
+      >
+        <div class="px-8 py-2">
           <svg
             width="143"
             height="70"
@@ -102,7 +108,7 @@
             </defs>
           </svg>
         </div>
-        <div class="px-8">
+        <div class="px-8 py-2">
           <svg
             width="239"
             height="70"
@@ -144,7 +150,7 @@
             </defs>
           </svg>
         </div>
-        <div class="px-8">
+        <div class="px-8 py-2">
           <svg
             width="195"
             height="70"
@@ -198,7 +204,7 @@
             </defs>
           </svg>
         </div>
-        <div class="px-8">
+        <div class="px-8 py-2">
           <svg
             width="102"
             height="70"
@@ -292,7 +298,7 @@
             </defs>
           </svg>
         </div>
-        <div class="px-8">
+        <div class="px-8 py-2">
           <svg
             width="206"
             height="70"
@@ -344,23 +350,23 @@
         </div>
       </div>
     </div>
-    <div class="flex flex-col justify-center bg-[#f9f1f4] py-12">
-      <div class="w-3/4 mx-auto flex flex-col items-center relative">
-        <h1 class="font-primary text-[40px] text-center font-extrabold">
-          Accurate and fast email checker.
+    <div class="flex flex-col justify-center bg-[#f7f0f3] py-12">
+      <div
+        class="w-10/12 md:w-8/12 lg:2-1/2 mx-auto flex flex-col items-center relative"
+      >
+        <h1
+          class="font-primary text-[36px] sm:text-[40px] leading-[1.2] text-center font-extrabold"
+        >
+        Accurate and fast email checker.
         </h1>
         <p
           class="font-primary text-[18px] sm:text-[24px] font-medium text-[#64607D] py-5 text-center"
         >
         We designed the Email Verifier to be as thorough as possible, with validations made at multiple levels: format, domain information, the response of the email servers, and comparison with our unique base of professional email addresses.
         </p>
-        <img
-          src="@/assets/images/email-verifier/1.png"
-          alt=""
-          class="w-[540px]"
-        />
+        <img src="@/assets/images/email-verifier/5.png" alt="" class="w-full" />
         <button
-          class="bg-[#E24949] text-white text-[21px] rounded-lg font-primary py-3 sm:py-5 px-11 my-8"
+          class="bg-[#E24949] text-white text-[21px] rounded-lg font-primary py-2 sm:py-5 px-11 my-8"
         >
           Get started for free
         </button>
@@ -368,24 +374,32 @@
     </div>
 
     <div
-      class="flex flex-col items-center justify-between container mx-auto my-8 sm:my-32 z-10"
+      class="flex flex-col items-center justify-between container mx-auto my-16 sm:my-32 z-10"
     >
-      <h1 class="text-[40px] font-bold pb-12 text-center">
+      <h1 class="text-[36px] sm:text-[40px] font-bold pb-12 text-center">
         More emails to verify?
       </h1>
       <div
-        class="flex max-lg:flex-col max-lg:mb-5 justify-between container items-center"
+        class="flex max-lg:flex-col-reverse max-lg:mb-5 justify-between container"
       >
-        <img src="@/assets/images/template.png" alt="" class="w-[540px]" />
-        <div class="flex flex-col py-8 max-w-[500px] px-3">
-          <h1 class="text-[40px] font-bold">Bulk Email Verifier</h1>
+        <img
+          src="@/assets/images/email-verifier/1.png"
+          alt=""
+          class="w-full lg:w-1/2"
+        />
+        <div class="flex flex-col py-12 w-full lg:w-1/2 px-5 lg:pl-[121px]">
+          <h1 class="text-[36px] sm:text-[40px] font-bold">
+            Bulk Email Verifier
+          </h1>
 
-          <p class="font-primary text-[18px] sm:text-[24px] font-medium text-[#64607D] py-5">
-            Need to verify a list of emails? Upload your list and get your results in just a few clicks.
+          <p
+            class="font-primary text-[18px] sm:text-[24px] font-medium text-[#64607D] py-2 sm:py-5"
+          >
+          Need to verify a list of emails? Upload your list and get your results in just a few clicks.
           </p>
           <div>
             <button
-              class="bg-[#E24949] text-white text-[21px] rounded-lg font-primary py-3 sm:py-5 px-5"
+              class="bg-[#E24949] text-white text-[21px] rounded-lg font-primary py-2 sm:py-5 px-5"
             >
             Bulk Email Verifier
             </button>
@@ -393,46 +407,54 @@
         </div>
       </div>
       <div
-        class="flex max-lg:flex-col-reverse max-lg:mb-5 justify-between container items-center my-10"
+        class="flex max-lg:flex-col max-lg:mb-5 justify-between container my-0 sm:my-10"
       >
-        <div class="flex flex-col max-w-[500px] px-5 pt-10">
-          <h1 class="text-[40px] font-bold">Email Verifier API</h1>
+        <div class="flex flex-col py-12 w-full lg:w-1/2 px-5 lg:pr-[121px]">
+          <h1 class="text-[36px] sm:text-[40px] font-bold">
+            Email Verifier API
+          </h1>
 
-          <p class="font-primary text-[18px] sm:text-[24px] font-medium text-[#64607D] py-5">
-            Bring Hunter into your own product by using the Email Verifier API.
+          <p
+            class="font-primary text-[18px] sm:text-[24px] font-medium text-[#64607D] py-2 sm:py-5"
+          >
+          Bring Hunter into your own product by using the Email Verifier API.
           </p>
           <div>
             <button
-              class="bg-[#E24949] text-white text-[21px] rounded-lg font-primary py-3 sm:py-5 px-5"
+              class="bg-[#E24949] text-white text-[21px] rounded-lg font-primary py-2 sm:py-5 px-5"
             >
             Email Verifier API
             </button>
           </div>
         </div>
         <img
-          src="@/assets/images/domain-verifier/2.png"
+          src="@/assets/images/email-verifier/3.png"
           alt=""
-          class="w-[540px]"
+          class="w-full lg:w-1/2"
         />
       </div>
       <div
-        class="flex max-lg:flex-col max-lg:mb-5 justify-between container items-center my-10"
+        class="flex max-lg:flex-col-reverse max-lg:mb-5 justify-between container my-5 sm:my-10"
       >
         <img
-          src="@/assets/images/domain-verifier/2.png"
+          src="@/assets/images/email-verifier/4.png"
           alt=""
-          class="w-[540px]"
+          class="w-full lg:w-1/2"
         />
-        <div class="flex flex-col max-w-[500px] px-5 pt-10">
-          <h1 class="text-[40px] font-bold">Google Sheets add-on</h1>
-          <p class="font-primary text-[18px] sm:text-[24px] font-medium text-[#64607D] py-5">
-            Find and verify email addresses directly in Google Sheets.
+        <div class="flex flex-col py-12 w-full lg:w-1/2 px-5 lg:pl-[121px]">
+          <h1 class="text-[36px] sm:text-[40px] font-bold">
+            Google Sheets add-on
+          </h1>
+          <p
+            class="font-primary text-[18px] sm:text-[24px] font-medium text-[#64607D] py-2 sm:py-5"
+          >
+          Find and verify email addresses directly in Google Sheets.
           </p>
           <div>
             <button
-              class="bg-[#E24949] text-white text-[21px] rounded-lg font-primary py-3 sm:py-5 px-5"
+              class="bg-[#E24949] text-white text-[21px] rounded-lg font-primary py-2 sm:py-5 px-5"
             >
-              Get the add-on
+            Get the add-on
             </button>
           </div>
         </div>
@@ -440,7 +462,7 @@
     </div>
     <div class="bg-[#f9fafb]">
       <div
-        class="container flex max-lg:flex-col max-lg:mb-5 justify-between items-center mx-auto py-12 sm:py-24 z-10 relative"
+        class="container flex max-lg:flex-col max-lg:mb-5 justify-center mx-auto py-8 z-10 relative"
       >
         <div class="absolute left-0 top-[81px]">
           <svg
@@ -456,33 +478,179 @@
             />
           </svg>
         </div>
-        <div class="max-w-[580px] pb-10 z-10 px-3">
-          <p class="text-[#E24949] font-primary text-[16px] font-semibold pb-3">
+        <div class="w-full lg:w-1/2 pb-10 px-3 z-10 py-10">
+          <div class="">
+            <svg
+              width="116"
+              height="20"
+              viewBox="0 0 116 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_2_15347)">
+                <path
+                  d="M9.53834 1.60996C9.70914 1.19932 10.2909 1.19932 10.4617 1.60996L12.5278 6.57744C12.5998 6.75056 12.7626 6.86885 12.9495 6.88383L18.3123 7.31376C18.7556 7.3493 18.9354 7.90256 18.5976 8.19189L14.5117 11.6919C14.3693 11.8139 14.3071 12.0053 14.3506 12.1876L15.5989 17.4208C15.7021 17.8534 15.2315 18.1954 14.8519 17.9635L10.2606 15.1592C10.1006 15.0615 9.89938 15.0615 9.73937 15.1592L5.14806 17.9635C4.76851 18.1954 4.29788 17.8534 4.40108 17.4208L5.64939 12.1876C5.69289 12.0053 5.6307 11.8139 5.48831 11.6919L1.40241 8.19189C1.06464 7.90256 1.24441 7.3493 1.68773 7.31376L7.05054 6.88383C7.23744 6.86885 7.40024 6.75056 7.47225 6.57744L9.53834 1.60996Z"
+                  fill="#F2F4F7"
+                />
+                <g clip-path="url(#clip1_2_15347)">
+                  <path
+                    d="M9.53834 1.60996C9.70914 1.19932 10.2909 1.19932 10.4617 1.60996L12.5278 6.57744C12.5998 6.75056 12.7626 6.86885 12.9495 6.88383L18.3123 7.31376C18.7556 7.3493 18.9354 7.90256 18.5976 8.19189L14.5117 11.6919C14.3693 11.8139 14.3071 12.0053 14.3506 12.1876L15.5989 17.4208C15.7021 17.8534 15.2315 18.1954 14.8519 17.9635L10.2606 15.1592C10.1006 15.0615 9.89938 15.0615 9.73937 15.1592L5.14806 17.9635C4.76851 18.1954 4.29788 17.8534 4.40108 17.4208L5.64939 12.1876C5.69289 12.0053 5.6307 11.8139 5.48831 11.6919L1.40241 8.19189C1.06464 7.90256 1.24441 7.3493 1.68773 7.31376L7.05054 6.88383C7.23744 6.86885 7.40024 6.75056 7.47225 6.57744L9.53834 1.60996Z"
+                    fill="#FEC84B"
+                  />
+                </g>
+              </g>
+              <g clip-path="url(#clip2_2_15347)">
+                <path
+                  d="M33.5383 1.60996C33.7091 1.19932 34.2909 1.19932 34.4617 1.60996L36.5278 6.57744C36.5998 6.75056 36.7626 6.86885 36.9495 6.88383L42.3123 7.31376C42.7556 7.3493 42.9354 7.90256 42.5976 8.19189L38.5117 11.6919C38.3693 11.8139 38.3071 12.0053 38.3506 12.1876L39.5989 17.4208C39.7021 17.8534 39.2315 18.1954 38.8519 17.9635L34.2606 15.1592C34.1006 15.0615 33.8994 15.0615 33.7394 15.1592L29.1481 17.9635C28.7685 18.1954 28.2979 17.8534 28.4011 17.4208L29.6494 12.1876C29.6929 12.0053 29.6307 11.8139 29.4883 11.6919L25.4024 8.19189C25.0646 7.90256 25.2444 7.3493 25.6877 7.31376L31.0505 6.88383C31.2374 6.86885 31.4002 6.75056 31.4722 6.57744L33.5383 1.60996Z"
+                  fill="#F2F4F7"
+                />
+                <g clip-path="url(#clip3_2_15347)">
+                  <path
+                    d="M33.5383 1.60996C33.7091 1.19932 34.2909 1.19932 34.4617 1.60996L36.5278 6.57744C36.5998 6.75056 36.7626 6.86885 36.9495 6.88383L42.3123 7.31376C42.7556 7.3493 42.9354 7.90256 42.5976 8.19189L38.5117 11.6919C38.3693 11.8139 38.3071 12.0053 38.3506 12.1876L39.5989 17.4208C39.7021 17.8534 39.2315 18.1954 38.8519 17.9635L34.2606 15.1592C34.1006 15.0615 33.8994 15.0615 33.7394 15.1592L29.1481 17.9635C28.7685 18.1954 28.2979 17.8534 28.4011 17.4208L29.6494 12.1876C29.6929 12.0053 29.6307 11.8139 29.4883 11.6919L25.4024 8.19189C25.0646 7.90256 25.2444 7.3493 25.6877 7.31376L31.0505 6.88383C31.2374 6.86885 31.4002 6.75056 31.4722 6.57744L33.5383 1.60996Z"
+                    fill="#FEC84B"
+                  />
+                </g>
+              </g>
+              <g clip-path="url(#clip4_2_15347)">
+                <path
+                  d="M57.5383 1.60996C57.7091 1.19932 58.2909 1.19932 58.4617 1.60996L60.5278 6.57744C60.5998 6.75056 60.7626 6.86885 60.9495 6.88383L66.3123 7.31376C66.7556 7.3493 66.9354 7.90256 66.5976 8.19189L62.5117 11.6919C62.3693 11.8139 62.3071 12.0053 62.3506 12.1876L63.5989 17.4208C63.7021 17.8534 63.2315 18.1954 62.8519 17.9635L58.2606 15.1592C58.1006 15.0615 57.8994 15.0615 57.7394 15.1592L53.1481 17.9635C52.7685 18.1954 52.2979 17.8534 52.4011 17.4208L53.6494 12.1876C53.6929 12.0053 53.6307 11.8139 53.4883 11.6919L49.4024 8.19189C49.0646 7.90256 49.2444 7.3493 49.6877 7.31376L55.0505 6.88383C55.2374 6.86885 55.4002 6.75056 55.4722 6.57744L57.5383 1.60996Z"
+                  fill="#F2F4F7"
+                />
+                <g clip-path="url(#clip5_2_15347)">
+                  <path
+                    d="M57.5383 1.60996C57.7091 1.19932 58.2909 1.19932 58.4617 1.60996L60.5278 6.57744C60.5998 6.75056 60.7626 6.86885 60.9495 6.88383L66.3123 7.31376C66.7556 7.3493 66.9354 7.90256 66.5976 8.19189L62.5117 11.6919C62.3693 11.8139 62.3071 12.0053 62.3506 12.1876L63.5989 17.4208C63.7021 17.8534 63.2315 18.1954 62.8519 17.9635L58.2606 15.1592C58.1006 15.0615 57.8994 15.0615 57.7394 15.1592L53.1481 17.9635C52.7685 18.1954 52.2979 17.8534 52.4011 17.4208L53.6494 12.1876C53.6929 12.0053 53.6307 11.8139 53.4883 11.6919L49.4024 8.19189C49.0646 7.90256 49.2444 7.3493 49.6877 7.31376L55.0505 6.88383C55.2374 6.86885 55.4002 6.75056 55.4722 6.57744L57.5383 1.60996Z"
+                    fill="#FEC84B"
+                  />
+                </g>
+              </g>
+              <g clip-path="url(#clip6_2_15347)">
+                <path
+                  d="M81.5383 1.60996C81.7091 1.19932 82.2909 1.19932 82.4617 1.60996L84.5278 6.57744C84.5998 6.75056 84.7626 6.86885 84.9495 6.88383L90.3123 7.31376C90.7556 7.3493 90.9354 7.90256 90.5976 8.19189L86.5117 11.6919C86.3693 11.8139 86.3071 12.0053 86.3506 12.1876L87.5989 17.4208C87.7021 17.8534 87.2315 18.1954 86.8519 17.9635L82.2606 15.1592C82.1006 15.0615 81.8994 15.0615 81.7394 15.1592L77.1481 17.9635C76.7685 18.1954 76.2979 17.8534 76.4011 17.4208L77.6494 12.1876C77.6929 12.0053 77.6307 11.8139 77.4883 11.6919L73.4024 8.19189C73.0646 7.90256 73.2444 7.3493 73.6877 7.31376L79.0505 6.88383C79.2374 6.86885 79.4002 6.75056 79.4722 6.57744L81.5383 1.60996Z"
+                  fill="#F2F4F7"
+                />
+                <g clip-path="url(#clip7_2_15347)">
+                  <path
+                    d="M81.5383 1.60996C81.7091 1.19932 82.2909 1.19932 82.4617 1.60996L84.5278 6.57744C84.5998 6.75056 84.7626 6.86885 84.9495 6.88383L90.3123 7.31376C90.7556 7.3493 90.9354 7.90256 90.5976 8.19189L86.5117 11.6919C86.3693 11.8139 86.3071 12.0053 86.3506 12.1876L87.5989 17.4208C87.7021 17.8534 87.2315 18.1954 86.8519 17.9635L82.2606 15.1592C82.1006 15.0615 81.8994 15.0615 81.7394 15.1592L77.1481 17.9635C76.7685 18.1954 76.2979 17.8534 76.4011 17.4208L77.6494 12.1876C77.6929 12.0053 77.6307 11.8139 77.4883 11.6919L73.4024 8.19189C73.0646 7.90256 73.2444 7.3493 73.6877 7.31376L79.0505 6.88383C79.2374 6.86885 79.4002 6.75056 79.4722 6.57744L81.5383 1.60996Z"
+                    fill="#FEC84B"
+                  />
+                </g>
+              </g>
+              <g clip-path="url(#clip8_2_15347)">
+                <path
+                  d="M105.538 1.60996C105.709 1.19932 106.291 1.19932 106.462 1.60996L108.528 6.57744C108.6 6.75056 108.763 6.86885 108.949 6.88383L114.312 7.31376C114.756 7.3493 114.935 7.90256 114.598 8.19189L110.512 11.6919C110.369 11.8139 110.307 12.0053 110.351 12.1876L111.599 17.4208C111.702 17.8534 111.231 18.1954 110.852 17.9635L106.261 15.1592C106.101 15.0615 105.899 15.0615 105.739 15.1592L101.148 17.9635C100.769 18.1954 100.298 17.8534 100.401 17.4208L101.649 12.1876C101.693 12.0053 101.631 11.8139 101.488 11.6919L97.4024 8.19189C97.0646 7.90256 97.2444 7.3493 97.6877 7.31376L103.051 6.88383C103.237 6.86885 103.4 6.75056 103.472 6.57744L105.538 1.60996Z"
+                  fill="#F2F4F7"
+                />
+                <g clip-path="url(#clip9_2_15347)">
+                  <path
+                    d="M105.538 1.60996C105.709 1.19932 106.291 1.19932 106.462 1.60996L108.528 6.57744C108.6 6.75056 108.763 6.86885 108.949 6.88383L114.312 7.31376C114.756 7.3493 114.935 7.90256 114.598 8.19189L110.512 11.6919C110.369 11.8139 110.307 12.0053 110.351 12.1876L111.599 17.4208C111.702 17.8534 111.231 18.1954 110.852 17.9635L106.261 15.1592C106.101 15.0615 105.899 15.0615 105.739 15.1592L101.148 17.9635C100.769 18.1954 100.298 17.8534 100.401 17.4208L101.649 12.1876C101.693 12.0053 101.631 11.8139 101.488 11.6919L97.4024 8.19189C97.0646 7.90256 97.2444 7.3493 97.6877 7.31376L103.051 6.88383C103.237 6.86885 103.4 6.75056 103.472 6.57744L105.538 1.60996Z"
+                    fill="#FEC84B"
+                  />
+                </g>
+              </g>
+              <defs>
+                <clipPath id="clip0_2_15347">
+                  <rect width="20" height="20" fill="white" />
+                </clipPath>
+                <clipPath id="clip1_2_15347">
+                  <rect width="20" height="20" fill="white" />
+                </clipPath>
+                <clipPath id="clip2_2_15347">
+                  <rect
+                    width="20"
+                    height="20"
+                    fill="white"
+                    transform="translate(24)"
+                  />
+                </clipPath>
+                <clipPath id="clip3_2_15347">
+                  <rect
+                    width="20"
+                    height="20"
+                    fill="white"
+                    transform="translate(24)"
+                  />
+                </clipPath>
+                <clipPath id="clip4_2_15347">
+                  <rect
+                    width="20"
+                    height="20"
+                    fill="white"
+                    transform="translate(48)"
+                  />
+                </clipPath>
+                <clipPath id="clip5_2_15347">
+                  <rect
+                    width="20"
+                    height="20"
+                    fill="white"
+                    transform="translate(48)"
+                  />
+                </clipPath>
+                <clipPath id="clip6_2_15347">
+                  <rect
+                    width="20"
+                    height="20"
+                    fill="white"
+                    transform="translate(72)"
+                  />
+                </clipPath>
+                <clipPath id="clip7_2_15347">
+                  <rect
+                    width="20"
+                    height="20"
+                    fill="white"
+                    transform="translate(72)"
+                  />
+                </clipPath>
+                <clipPath id="clip8_2_15347">
+                  <rect
+                    width="20"
+                    height="20"
+                    fill="white"
+                    transform="translate(96)"
+                  />
+                </clipPath>
+                <clipPath id="clip9_2_15347">
+                  <rect
+                    width="20"
+                    height="20"
+                    fill="white"
+                    transform="translate(96)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <p class="text-[#2F80ED] font-primary text-[16px] font-semibold pb-3">
             Used and loved by 3+ million users.
           </p>
           <h1 class="font-primary text-3xl font-semibold pb-5">
             We’re just getting started
           </h1>
           <p class="text-[#64607D] font-primary text-[20px]">
-            Calrifio has benefited me by significantly reducing the time and effort required to locate relevant contacts. This has allowed me to focus more on crafting personalized outreach messages and building meaningful relationships with potential partners.
+            Prospecting would not be as smooth as it is now without Hunter.
+            Also, the tool contributed hugely in reducing bounce rate, which was
+            the main challenge in the lead gen department.
           </p>
         </div>
         <img
           src="@/assets/images/email-verifier/2.png"
           alt=""
-          class="w-[384px]"
+          class="w-full lg:w-2/5 px-3 lg:pl-[120px]"
         />
       </div>
     </div>
-    <div class="bg-[#fdf2f2]">
-      <div class="max-w-[750px] flex flex-col mx-auto py-8 sm:py-24">
-        <h1 class="font-primary text-3xl font-semibold pb-5 text-center">
-          Common questions about the Email Verifier
+    <div class="bg-[#fef8f8]">
+      <div class="max-w-[1250px] flex flex-col mx-auto py-12 sm:py-24">
+        <h1 class="font-primary text-3xl font-semibold pb-5 text-center px-3">
+          Common questions about the Email Finder
         </h1>
-        <p class="text-[#64607D] font-primary text-[20px] text-center mb-16">
-          If you can't find the answer to your question here, visit the dedicated section in our Help Center.
+        <p
+          class="text-[#64607D] font-primary text-[20px] text-center mb-16 px-3"
+        >
+        If you can't find the answer to your question here, visit the dedicated section in our Help Center.
         </p>
-        <div class="w-full bg-[#f7eff0] p-8 flex">
+        <div class="w-full bg-[#f7f0f1] p-8 flex">
           <div class="pr-6">
             <svg
               width="24"
@@ -627,41 +795,18 @@ Hunter's Email Verifier does a complete check of email addresses, verifies if it
             Can I validate a list of email addresses?
           </h4>
         </div>
-        <div class="flex items-center p-8">
-          <div>
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12 8V16M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
-                stroke="#98A2B3"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </div>
-
-          <h4 class="text-[#101828] font-primary text-[18px] font-medium pl-6">
-            Is the Email Verifier free?
-          </h4>
-        </div>
       </div>
     </div>
 
     <div>
       <div
-        class="container mx-auto sm:my-24 rounded-xl bg-[#F9FAFB] flex max-lg:flex-col justify-between items-center"
+        class="container mx-auto my-0 sm:my-24 rounded-xl bg-[#F9FAFB] flex max-lg:flex-col justify-between items-center"
       >
         <div class="p-8 sm:p-16 flex flex-col max-w-[700px]">
-          <p class="text-[#E24949] text-[16px] font-medium font-primary">
+          <p class="text-[#2F80ED] text-[16px] font-medium font-primary">
             Browser Extension
           </p>
-          <h1 class="py-6 font-primary text-[36px] font-medium">
+          <h1 class="py-6 font-primary text-[28px] sm:text-[36px] font-medium">
             Bring <span class="text-[#E24949] font-bold">Calrifo</span> with
             you.
           </h1>
@@ -814,7 +959,7 @@ Hunter's Email Verifier does a complete check of email addresses, verifies if it
 
           <div>
             <button
-              class="bg-[#E24949] text-white text-[19px] rounded-lg font-primary py-3 sm:py-5 px-5"
+              class="bg-[#E24949] text-white text-[19px] rounded-lg font-primary py-2 sm:py-5 px-5"
             >
               Add home to chrome
             </button>
@@ -828,8 +973,8 @@ Hunter's Email Verifier does a complete check of email addresses, verifies if it
             width="680"
             viewBox="0 0 680 422"
             fill="none"
-            class="w-full"
             xmlns="http://www.w3.org/2000/svg"
+            class="w-full"
           >
             <g clip-path="url(#clip0_2_14563)">
               <mask
