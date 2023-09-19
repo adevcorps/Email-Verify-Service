@@ -38,6 +38,22 @@ const routes = [
         name: "bulk-email-checker",
         component: () => import("@/views/user/products/BulkEmailVerifier.vue"),
       },
+      {
+        meta: {
+          title: "Conatct",
+        },
+        path: "/contact",
+        name: "contact",
+        component: () => import("@/views/user/ContactPage.vue"),
+      },
+      {
+        meta: {
+          title: "Faq",
+        },
+        path: "/faq",
+        name: "Faq",
+        component: () => import("@/views/user/FaqPage.vue"),
+      },
     ]
   },
   {

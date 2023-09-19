@@ -18,7 +18,8 @@
     "vue-carousel": "^0.18.0",
     "vue-i18n": "^9.4.0",
     "vue-router": "^4.0.0",
-    "vue3-carousel": "^0.3.1"
+    "vue3-carousel": "^0.3.1",
+    "vue3-google-map": "^0.17.1"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.1.4",
