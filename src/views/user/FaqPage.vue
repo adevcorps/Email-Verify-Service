@@ -41,127 +41,338 @@
   </header>
   <section>
     <div class="container mx-auto max-xl:max-w-[100%] max-xl:px-5">
-      <div class="w-6/12 prose mx-auto text-center mb-44">
-        <h3 class="font-primary text-primary text-4xl mt-0 mb-5">Frequently asked questions</h3>
-        <p class="font-primary text-primary text-xl mb-16">Common questions about the Domain Search</p>
-        <div class="w-full">
-          <div class="flex justify-between mb-6">
-            <div class="w-6/12 pr-4">
-              <p class="text-[#344054] font-primary text-sm font-semibold my-1 text-left">
-                First name
-              </p>
-              <input
-                type="email"
-                name="email"
-                placeholder="First name"
-                value=""
-                class="flex py-2 px-3.5 self-stretch rounded-lg border border-[#D0D5DD] border-solid shadow-sm text-[#475467] font-primary text-[14px] font-semibold w-full"
+      <div class="w-8/12 mx-auto text-center mb-44 px-10">
+        <h3 class="font-primary text-primary font-semibold text-4xl mt-0 mb-5">
+          Frequently asked questions
+        </h3>
+        <p class="font-primary text-primary text-xl mb-16">
+          Common questions about the Domain Search
+        </p>
+        <div class="w-full bg-[#F9FAFB] p-8 flex rounded-lg mb-4">
+          <div class="pr-6">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                stroke="#98A2B3"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
               />
-            </div>
-            <div class="w-6/12 pl-4">
-              <p class="text-[#344054] font-primary text-sm font-semibold my-1 text-left">
-                Second name
-              </p>
-              <input
-                type="text"
-                name="second-name"
-                placeholder="Second name"
-                value=""
-                class="flex py-2 px-3.5 gap-2 self-stretch rounded-lg border border-[#D0D5DD] border-solid shadow-sm text-[#475467] font-primary text-[14px] font-semibold w-full"
+            </svg>
+          </div>
+          <div class="w-full text-left">
+            <h4 class="text-[#101828] font-primary text-[18px] font-medium pb-2">
+              Do I need to download and install any software?
+            </h4>
+            <p class="text-[#475467] font-primary text-[16px]">
+              No. There is no need to download or install any software to verify email
+              addresses.Quick Email Verification is an intelligent, online email
+              verification service. All you need to do is upload your email list for bulk
+              email verification on our platform and you're ready to start verification.
+            </p>
+          </div>
+        </div>
+        <div class="w-full bg-[#F9FAFB] p-8 flex rounded-lg mb-4">
+          <div class="pr-6">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                stroke="#98A2B3"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
               />
-            </div>
+            </svg>
           </div>
-          <div class="w-full mb-6">
-            <p class="text-[#344054] font-primary text-sm font-semibold my-1 text-left">
-              Email
+          <div class="w-full text-left">
+            <h4 class="text-[#101828] font-primary text-[18px] font-medium pb-2">
+              Will my IP get blocked?
+            </h4>
+            <p class="text-[#475467] font-primary text-[16px]">
+              No. Your IP will never be blocked.QuickEmailVerification is a web based
+              online email verification service. Every single process of verification is
+              done at our end. The email list verification and cleaning process run on our
+              cloud platform so your IP is never used for email verification. This way
+              your IP is totally secure.
             </p>
-            <input
-              type="email"
-              name="second-name"
-              placeholder="You@company.com"
-              value=""
-              class="flex py-2 px-3.5 gap-2 self-stretch rounded-lg border border-[#D0D5DD] border-solid shadow-sm text-[#475467] font-primary text-[14px] font-semibold w-full"
-            />
           </div>
-          <div class="w-full mb-6">
-            <p class="text-[#344054] font-primary text-sm font-semibold my-1 text-left">
-              Password (8 to 30 characters)
-            </p>
-            <input
-              type="password"
-              name="password"
-              placeholder="*************"
-              value=""
-              class="flex py-2 px-3.5 gap-2 self-stretch rounded-lg border border-[#D0D5DD] border-solid shadow-sm text-[#475467] font-primary text-[14px] font-semibold w-full"
-            />
-          </div>
-          <div class="w-full mb-6">
-            <p class="text-[#344054] font-primary text-sm font-semibold my-1 text-left">
-              Confirm Password
-            </p>
-            <input
-              type="password"
-              name="password"
-              placeholder="*************"
-              value=""
-              class="flex py-2 px-3.5 gap-2 self-stretch rounded-lg border border-[#D0D5DD] border-solid shadow-sm text-[#475467] font-primary text-[14px] font-semibold w-full"
-            />
-          </div>
-          <div class="w-full mb-6">
-            <p class="text-[#344054] font-primary text-sm font-semibold my-1 text-left">
-              Country
-            </p>
-            <select
-              id="countries"
-              class="bg-gray-50 border text-[#475467] font-primary text-[14px] border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
+        </div>
+        <div class="w-full bg-[#F9FAFB] p-8 flex rounded-lg mb-4">
+          <div class="pr-6">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <option selected>Choose a country</option>
-              <option value="US">United States</option>
-              <option value="CA">Canada</option>
-              <option value="FR">France</option>
-              <option value="DE">Poland</option>
-            </select>
+              <path
+                d="M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                stroke="#98A2B3"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
           </div>
-          <div class="w-full mb-6">
-            <p class="text-[#344054] font-primary text-sm font-semibold my-1 text-left">
-              Message
+          <div class="w-full text-left">
+            <h4 class="text-[#101828] font-primary text-[18px] font-medium pb-2">
+              How fast is it?
+            </h4>
+            <p class="text-[#475467] font-primary text-[16px]">
+              Very fast! Quick Email Verification system is a multi-threaded cloud
+              platform which is designed to verify more than a thousand email addresses
+              every minute. That's why we call it Quick Email Verification!Our email
+              verification service gives you a chance to validate any number of email
+              addresses and we can begin handling them immediately. Honestly, numbers
+              truly don't make any difference: whether you verify just a few hundreds or
+              tens of thousands email addresses simultaneously, the accuracy remains
+              consistently above 95%.
             </p>
-            <textarea
-              id="message"
-              rows="4"
-              class="block p-2.5 w-full text-sm font-primary text-gray-900 bg-gray-50 rounded-lg border border-gray-300"
-              placeholder="Write your thoughts here..."
-            ></textarea>
           </div>
-          <div class="w-full mb-6 flex flex-row items-center">
-            <input
-              id="default-checkbox"
-              type="checkbox"
-              class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:outline-none"
-            />
-            <p
-              class="text-[#475467] font-primary text-[14px] font-semibold leading-5 pl-2 my-0"
+        </div>
+        <div class="w-full bg-[#F9FAFB] p-8 flex rounded-lg mb-4">
+          <div class="pr-6">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              Sign me up for news letter
+              <path
+                d="M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                stroke="#98A2B3"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="w-full text-left">
+            <h4 class="text-[#101828] font-primary text-[18px] font-medium pb-2">
+              How does it work?
+            </h4>
+            <p class="text-[#475467] font-primary text-[16px]">
+              The email verification process at QuickEmailVerification is designed
+              intelligently, for optimal performance. It is divided into two
+              sub-processes: pre-validation and post-validation. In the pre-validation
+              process, email list files (CSV/TXT) get verified for correctness. In
+              post-validation, each email address in your list is checked for its
+              existence. The QuickEmailVerification system verifies email addresses
+              against a number of different validations, starting from the RFC syntax
+              checking to the deep level SMTP testing of user mailbox existence checking.
             </p>
           </div>
-          <div class="w-full mb-14 flex flex-row items-center">
-            <input
-              id="default-checkbox"
-              type="checkbox"
-              class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:outline-none"
-            />
-            <p
-              class="text-[#475467] font-primary text-[14px] font-semibold leading-5 pl-2 my-0"
+        </div>
+        <div class="w-full bg-[#F9FAFB] p-8 flex rounded-lg mb-4">
+          <div class="pr-6">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              I have read, full understand, and accept the Terms of Service and the DPA.
+              <path
+                d="M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                stroke="#98A2B3"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="w-full text-left">
+            <h4 class="text-[#101828] font-primary text-[18px] font-medium pb-2">
+              In what format should I upload the email lists?
+            </h4>
+            <p class="text-[#475467] font-primary text-[16px]">
+              Currently, our online system accepts the following file formats:a) Plain
+              text (.txt)b) Comma Separated Value (.csv)c) Microsoft Excel Spreadsheets
+              (.xls or .xlsx)d) OpenOffice Spreadsheets (.ods)Uploading, downloading and
+              integrating these formats are a breeze.If you have any other file format,
+              you may need to convert it to .csv or .txt file. To prepare a csv file from
+              other spreadsheet formats, open your spreadsheet application and save the
+              file as Text csv (.csv). Or simply create a text file with .csv OR .txt
+              extension. The file must list emails in a single column. <br/> <br/>Example
+              :sample1@domain.com <br/>sample2@domain.com<br />sample3@domain.com
             </p>
           </div>
-          <button
-            class="py-2.5 px-8 bg-[#2078BE] text-white rounded-md text-sm font-primary w-full"
-          >
-            Continue
-          </button>
+        </div>
+        <div class="w-full bg-[#F9FAFB] p-8 flex rounded-lg mb-4">
+          <div class="pr-6">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                stroke="#98A2B3"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="w-full text-left">
+            <h4 class="text-[#101828] font-primary text-[18px] font-medium pb-2">
+              Are there any emails that can't be checked?
+            </h4>
+            <p class="text-[#475467] font-primary text-[16px]">
+              Practically, the only email addresses that can't be verified are the ones whose servers are down or unresponsive. In case that happens, we flag them appropriately so you can take action later.And no, we won't deduct your verification credits for emails that couldn't be verified.
+            </p>
+          </div>
+        </div>
+        <div class="w-full bg-[#F9FAFB] p-8 flex rounded-lg mb-4">
+          <div class="pr-6">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                stroke="#98A2B3"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="w-full text-left">
+            <h4 class="text-[#101828] font-primary text-[18px] font-medium pb-2">
+              Do you offer an API service?
+            </h4>
+            <p class="text-[#475467] font-primary text-[16px]">
+              Yes. Quick Email Verification provides API service for real time email verification. It can be integrated with any system that supports GET request and parse JSON response. For batch verification, a "bulk email verification" API service is also available.
+            </p>
+          </div>
+        </div>
+        <div class="w-full bg-[#F9FAFB] p-8 flex rounded-lg mb-4">
+          <div class="pr-6">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                stroke="#98A2B3"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="w-full text-left">
+            <h4 class="text-[#101828] font-primary text-[18px] font-medium pb-2">
+              Do you offer free trial of the service?
+            </h4>
+            <p class="text-[#475467] font-primary text-[16px]">
+              Sure enough! We want our clients to experience our awesome email verification service fully before they invest their first dollar. Currently, we are offering a free trial which permits a certain number of email verifications every day.
+            </p>
+          </div>
+        </div>
+        <div class="w-full bg-[#F9FAFB] p-8 flex rounded-lg mb-4">
+          <div class="pr-6">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                stroke="#98A2B3"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="w-full text-left">
+            <h4 class="text-[#101828] font-primary text-[18px] font-medium pb-2">
+              Why should I use Quick Email Verification service?
+            </h4>
+            <p class="text-[#475467] font-primary text-[16px]">
+              If you have any online system with web forms accepting email address, there are all the chances of the user making a typo or the user entering an incorrect email. Our real time email verification helps you identify invalid email address. It is also necessary to validate and clean your list of emails before sending any bulk campaign mails. Our email verification helps you reduce bounce rate and protect your IP reputation.
+            </p>
+          </div>
+        </div>
+        <div class="w-full bg-[#F9FAFB] p-8 flex rounded-lg mb-4">
+          <div class="pr-6">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                stroke="#98A2B3"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="w-full text-left">
+            <h4 class="text-[#101828] font-primary text-[18px] font-medium pb-2">
+              What does the "unknown" status mean?
+            </h4>
+            <p class="text-[#475467] font-primary text-[16px]">
+              The "unknown" status means both the possibilities exist: the email may be valid or may be invalid. This happens when the receiving server is not responding well. We recommend you retest such emails after some time.
+            </p>
+          </div>
+        </div>
+        <div class="w-full bg-[#F9FAFB] p-8 flex rounded-lg mb-4">
+          <div class="pr-6">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                stroke="#98A2B3"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="w-full text-left">
+            <h4 class="text-[#101828] font-primary text-[18px] font-medium pb-2">
+              Do you accept custom jobs? How can I request them?
+            </h4>
+            <p class="text-[#475467] font-primary text-[16px]">
+              Sure we do! Contact us and we'll give you the best deal..
+            </p>
+          </div>
         </div>
       </div>
     </div>
