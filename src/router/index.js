@@ -40,6 +40,24 @@ const routes = [
       },
       {
         meta: {
+          title: "Integration",
+        },
+        path: "/integration",
+        name: "integration",
+        component: () => import("@/views/user/products/Integration.vue")
+      },
+      {
+        path: "integration/mailchimp",
+        name: "mailchimp",
+        component: () => import('@/views/user/integrations/ServiceDetails.vue')
+      },
+      {
+        path: "integration/mailchimp/setup",
+        name: "mailchimp-setup",
+        component: () => import('@/views/user/integrations/MailChimp.vue')
+      },
+      {
+        meta: {
           title: "Conatct",
         },
         path: "/contact",
