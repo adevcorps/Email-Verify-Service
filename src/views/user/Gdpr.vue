@@ -11,7 +11,7 @@
       <p class="text-white font-primary text-xl font-[400px] mb-10">
         Need something cleared up? Here are our most frequently asked questions.
       </p>
-      <div class="relative w-7/12 mx-auto">
+      <!-- <div class="relative w-7/12 mx-auto">
         <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -36,17 +36,17 @@
           placeholder="Search"
           required
         />
-      </div>
+      </div> -->
     </div>
   </header>
   <section>
     <div class="container mx-auto max-xl:max-w-[100%] max-xl:px-5">
       <div class="w-8/12 mx-auto text-center mb-44 px-10">
         <h3 class="font-primary text-primary font-semibold text-4xl mt-0 mb-5">
-          Frequently asked questions
+          General data protection regulation
         </h3>
         <p class="font-primary text-primary text-xl mb-16">
-          Common questions about the Domain Search
+          Common data protection regulations about the mail verification
         </p>
         <div class="w-full bg-[#F9FAFB] p-8 flex rounded-lg mb-4">
           <div class="pr-6">
@@ -86,8 +86,7 @@
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-              >
-              </path>
+              ></path>
             </svg>
           </div>
           <div class="w-full text-left">
@@ -146,21 +145,23 @@
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-              >
-              </path>
+              ></path>
             </svg>
           </div>
           <div class="w-full text-left">
-            <h4 class="text-[#101828] font-primary text-[18px] font-medium pb-2 cursor-pointer" @click="slide(1)">
+            <h4
+              class="text-[#101828] font-primary text-[18px] font-medium pb-2 cursor-pointer"
+              @click="slide(1)"
+            >
               Will my IP get blocked?
             </h4>
             <Vue3SlideUpDown v-model="secShow">
               <p class="text-[#475467] font-primary text-[16px]">
                 No. Your IP will never be blocked.QuickEmailVerification is a web based
                 online email verification service. Every single process of verification is
-                done at our end. The email list verification and cleaning process run on our
-                cloud platform so your IP is never used for email verification. This way
-                your IP is totally secure.
+                done at our end. The email list verification and cleaning process run on
+                our cloud platform so your IP is never used for email verification. This
+                way your IP is totally secure.
               </p>
             </Vue3SlideUpDown>
           </div>
@@ -203,8 +204,7 @@
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-              >
-              </path>
+              ></path>
             </svg>
           </div>
           <div class="w-full text-left">
@@ -216,7 +216,14 @@
             </h4>
             <Vue3SlideUpDown v-model="thrShow" open-start="changeIcon">
               <p class="text-[#475467] font-primary text-[16px]" id="target">
-                Very fast! Quick Email Verification system is a multi-threaded cloud platform which is designed to verify more than a thousand email addresses every minute. That's why we call it Quick Email Verification!Our email verification service gives you a chance to validate any number of email addresses and we can begin handling them immediately. Honestly, numbers truly don't make any difference: whether you verify just a few hundreds or tens of thousands email addresses simultaneously, the accuracy remains consistently above 95%.
+                Very fast! Quick Email Verification system is a multi-threaded cloud
+                platform which is designed to verify more than a thousand email addresses
+                every minute. That's why we call it Quick Email Verification!Our email
+                verification service gives you a chance to validate any number of email
+                addresses and we can begin handling them immediately. Honestly, numbers
+                truly don't make any difference: whether you verify just a few hundreds or
+                tens of thousands email addresses simultaneously, the accuracy remains
+                consistently above 95%.
               </p>
             </Vue3SlideUpDown>
           </div>
@@ -259,17 +266,27 @@
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-              >
-              </path>
+              ></path>
             </svg>
           </div>
           <div class="w-full text-left">
-            <h4 class="text-[#101828] font-primary text-[18px] font-medium pb-2 cursor-pointer" @click="slide(3)">
+            <h4
+              class="text-[#101828] font-primary text-[18px] font-medium pb-2 cursor-pointer"
+              @click="slide(3)"
+            >
               How does it work?
             </h4>
             <Vue3SlideUpDown v-model="frtShow">
               <p class="text-[#475467] font-primary text-[16px]">
-                The email verification process at QuickEmailVerification is designed intelligently, for optimal performance. It is divided into two sub-processes: pre-validation and post-validation. In the pre-validation process, email list files (CSV/TXT) get verified for correctness. In post-validation, each email address in your list is checked for its existence. The QuickEmailVerification system verifies email addresses against a number of different validations, starting from the RFC syntax checking to the deep level SMTP testing of user mailbox existence checking.
+                The email verification process at QuickEmailVerification is designed
+                intelligently, for optimal performance. It is divided into two
+                sub-processes: pre-validation and post-validation. In the pre-validation
+                process, email list files (CSV/TXT) get verified for correctness. In
+                post-validation, each email address in your list is checked for its
+                existence. The QuickEmailVerification system verifies email addresses
+                against a number of different validations, starting from the RFC syntax
+                checking to the deep level SMTP testing of user mailbox existence
+                checking.
               </p>
             </Vue3SlideUpDown>
           </div>
@@ -312,8 +329,7 @@
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-              >
-              </path>
+              ></path>
             </svg>
           </div>
           <div class="w-full text-left">
@@ -325,11 +341,15 @@
             </h4>
             <Vue3SlideUpDown v-model="fifShow" open-start="changeIcon">
               <p class="text-[#475467] font-primary text-[16px]" id="target">
-                Currently, our online system accepts the following file formats:a) Plain text (.txt)b) Comma Separated Value (.csv)c) Microsoft Excel Spreadsheets (.xls or .xlsx)d) OpenOffice Spreadsheets (.ods)Uploading, downloading and integrating these formats are a breeze.If you have any other file format, you may need to convert it to .csv or .txt file. To prepare a csv file from other spreadsheet formats, open your spreadsheet application and save the file as Text csv (.csv). Or simply create a text file with .csv OR .txt extension. The file must list emails in a single column.
-
-                Example :sample1@domain.com
-                sample2@domain.com
-                sample3@domain.com
+                Currently, our online system accepts the following file formats:a) Plain
+                text (.txt)b) Comma Separated Value (.csv)c) Microsoft Excel Spreadsheets
+                (.xls or .xlsx)d) OpenOffice Spreadsheets (.ods)Uploading, downloading and
+                integrating these formats are a breeze.If you have any other file format,
+                you may need to convert it to .csv or .txt file. To prepare a csv file
+                from other spreadsheet formats, open your spreadsheet application and save
+                the file as Text csv (.csv). Or simply create a text file with .csv OR
+                .txt extension. The file must list emails in a single column. Example
+                :sample1@domain.com sample2@domain.com sample3@domain.com
               </p>
             </Vue3SlideUpDown>
           </div>
@@ -372,17 +392,22 @@
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-              >
-              </path>
+              ></path>
             </svg>
           </div>
           <div class="w-full text-left">
-            <h4 class="text-[#101828] font-primary text-[18px] font-medium pb-2 cursor-pointer" @click="slide(5)">
+            <h4
+              class="text-[#101828] font-primary text-[18px] font-medium pb-2 cursor-pointer"
+              @click="slide(5)"
+            >
               Are there any emails that can't be checked?
             </h4>
             <Vue3SlideUpDown v-model="fifShow">
               <p class="text-[#475467] font-primary text-[16px]">
-                Practically, the only email addresses that can't be verified are the ones whose servers are down or unresponsive. In case that happens, we flag them appropriately so you can take action later.And no, we won't deduct your verification credits for emails that couldn't be verified.
+                Practically, the only email addresses that can't be verified are the ones
+                whose servers are down or unresponsive. In case that happens, we flag them
+                appropriately so you can take action later.And no, we won't deduct your
+                verification credits for emails that couldn't be verified.
               </p>
             </Vue3SlideUpDown>
           </div>
@@ -425,8 +450,7 @@
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-              >
-              </path>
+              ></path>
             </svg>
           </div>
           <div class="w-full text-left">
@@ -438,7 +462,10 @@
             </h4>
             <Vue3SlideUpDown v-model="sxtShow" open-start="changeIcon">
               <p class="text-[#475467] font-primary text-[16px]" id="target">
-                Yes. Quick Email Verification provides API service for real time email verification. It can be integrated with any system that supports GET request and parse JSON response. For batch verification, a "bulk email verification" API service is also available.
+                Yes. Quick Email Verification provides API service for real time email
+                verification. It can be integrated with any system that supports GET
+                request and parse JSON response. For batch verification, a "bulk email
+                verification" API service is also available.
               </p>
             </Vue3SlideUpDown>
           </div>
@@ -481,17 +508,22 @@
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-              >
-              </path>
+              ></path>
             </svg>
           </div>
           <div class="w-full text-left">
-            <h4 class="text-[#101828] font-primary text-[18px] font-medium pb-2 cursor-pointer" @click="slide(7)">
+            <h4
+              class="text-[#101828] font-primary text-[18px] font-medium pb-2 cursor-pointer"
+              @click="slide(7)"
+            >
               Do you offer free trial of the service?
             </h4>
             <Vue3SlideUpDown v-model="egtShow">
               <p class="text-[#475467] font-primary text-[16px]">
-                Sure enough! We want our clients to experience our awesome email verification service fully before they invest their first dollar. Currently, we are offering a free trial which permits a certain number of email verifications every day.
+                Sure enough! We want our clients to experience our awesome email
+                verification service fully before they invest their first dollar.
+                Currently, we are offering a free trial which permits a certain number of
+                email verifications every day.
               </p>
             </Vue3SlideUpDown>
           </div>
@@ -534,8 +566,7 @@
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-              >
-              </path>
+              ></path>
             </svg>
           </div>
           <div class="w-full text-left">
@@ -547,7 +578,12 @@
             </h4>
             <Vue3SlideUpDown v-model="ninShow" open-start="changeIcon">
               <p class="text-[#475467] font-primary text-[16px]" id="target">
-                If you have any online system with web forms accepting email address, there are all the chances of the user making a typo or the user entering an incorrect email. Our real time email verification helps you identify invalid email address. It is also necessary to validate and clean your list of emails before sending any bulk campaign mails. Our email verification helps you reduce bounce rate and protect your IP reputation.
+                If you have any online system with web forms accepting email address,
+                there are all the chances of the user making a typo or the user entering
+                an incorrect email. Our real time email verification helps you identify
+                invalid email address. It is also necessary to validate and clean your
+                list of emails before sending any bulk campaign mails. Our email
+                verification helps you reduce bounce rate and protect your IP reputation.
               </p>
             </Vue3SlideUpDown>
           </div>
@@ -590,17 +626,21 @@
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-              >
-              </path>
+              ></path>
             </svg>
           </div>
           <div class="w-full text-left">
-            <h4 class="text-[#101828] font-primary text-[18px] font-medium pb-2 cursor-pointer" @click="slide(9)">
+            <h4
+              class="text-[#101828] font-primary text-[18px] font-medium pb-2 cursor-pointer"
+              @click="slide(9)"
+            >
               What does the "unknown" status mean?
             </h4>
             <Vue3SlideUpDown v-model="tetShow">
               <p class="text-[#475467] font-primary text-[16px]">
-                The "unknown" status means both the possibilities exist: the email may be valid or may be invalid. This happens when the receiving server is not responding well. We recommend you retest such emails after some time.
+                The "unknown" status means both the possibilities exist: the email may be
+                valid or may be invalid. This happens when the receiving server is not
+                responding well. We recommend you retest such emails after some time.
               </p>
             </Vue3SlideUpDown>
           </div>
@@ -643,8 +683,7 @@
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-              >
-              </path>
+              ></path>
             </svg>
           </div>
           <div class="w-full text-left">
@@ -671,7 +710,7 @@
 import { ref } from "vue";
 import { Vue3SlideUpDown } from "vue3-slide-up-down";
 
-const openedId = ref('');
+const openedId = ref("");
 const first_show = ref(false);
 const secShow = ref(false);
 const thrShow = ref(false);
@@ -684,18 +723,29 @@ const ninShow = ref(false);
 const tetShow = ref(false);
 const evtShow = ref(false);
 
-var showsArray = [first_show, secShow, thrShow, frtShow, fifShow, sxtShow, svtShow, egtShow, ninShow, tetShow, evtShow];
+var showsArray = [
+  first_show,
+  secShow,
+  thrShow,
+  frtShow,
+  fifShow,
+  sxtShow,
+  svtShow,
+  egtShow,
+  ninShow,
+  tetShow,
+  evtShow,
+];
 
 const initShow = (showItem) => {
-  showsArray.forEach(em => {
-    if(showItem != em)
-      em.value = false;
+  showsArray.forEach((em) => {
+    if (showItem != em) em.value = false;
   });
-}
+};
 const slide = (_id) => {
   initShow(showsArray[_id]);
   console.log(showsArray[_id].value);
-  showsArray[_id].value = !showsArray[_id].value
+  showsArray[_id].value = !showsArray[_id].value;
 };
 
 const changeIcon = () => {
