@@ -6,7 +6,7 @@ import router from "./router";
 import { useMainStore } from "@/stores/main.js";
 import { useStyleStore } from "@/stores/style.js";
 import { darkModeKey, styleKey } from "@/config.js";
-import i18n from './i18n';
+import i18n from "./i18n";
 
 import "./css/main.css";
 
@@ -14,7 +14,11 @@ import "./css/main.css";
 const pinia = createPinia();
 
 /* Create Vue app */
-createApp(App).use(router).use(i18n()).use(pinia).mount("#app");
+createApp(App)
+  .use(router)
+  .use(i18n())
+  .use(pinia)
+  .mount("#app");
 
 /* Init Pinia stores */
 const mainStore = useMainStore(pinia);

@@ -1,8 +1,7 @@
-import { createRouter, createWebHistory, } from "vue-router";
-import Style from "@/views/admin/StyleView.vue";
-import HomePageLayout from '@/layouts/HomePageLayout.vue';
+import { createRouter, createWebHistory } from "vue-router";
+import HomePageLayout from "@/layouts/HomePageLayout.vue";
+import UserDashboardLayout from "@/layouts/UserDashboardLayout.vue";
 import AdminHome from "@/views/admin/HomeView.vue";
-import i18n from '../i18n.js'
 
 const routes = [
   {
@@ -11,9 +10,9 @@ const routes = [
     component: HomePageLayout,
     children: [
       {
-        path: '/',
-        name: 'home-page',
-        component: () => import('@/views/user/HomePage.vue')
+        path: "/",
+        name: "home-page",
+        component: () => import("@/views/user/HomePage.vue"),
       },
       {
         meta: {
@@ -45,17 +44,17 @@ const routes = [
         },
         path: "/integration",
         name: "integration",
-        component: () => import("@/views/user/products/Integration.vue")
+        component: () => import("@/views/user/products/Integration.vue"),
       },
       {
         path: "integration/mailchimp",
         name: "mailchimp",
-        component: () => import('@/views/user/integrations/ServiceDetails.vue')
+        component: () => import("@/views/user/integrations/ServiceDetails.vue"),
       },
       {
         path: "integration/mailchimp/setup",
         name: "mailchimp-setup",
-        component: () => import('@/views/user/integrations/MailChimp.vue')
+        component: () => import("@/views/user/integrations/MailChimp.vue"),
       },
       {
         meta: {
@@ -89,7 +88,7 @@ const routes = [
         name: "gdpr",
         component: () => import("@/views/user/Gdpr.vue"),
       },
-    ]
+    ],
   },
   {
     // Document title tag
@@ -189,6 +188,11 @@ const routes = [
     name: "reset-password",
     component: () => import("@/views/admin/auth/PasswordReset.vue"),
   },
+  {
+    path: "/user-profile",
+    component: () => import("@/views/user/dashboard/UserProfile.vue"),
+  },
+  { path: '/:pathMatch(.*)*', name: 'NotFound', component: () => import("@/views/admin/ErrorView.vue") },
   {
     meta: {
       title: "Error",
