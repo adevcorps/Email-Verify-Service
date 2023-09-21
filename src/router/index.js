@@ -2,6 +2,7 @@ import { createRouter, createWebHistory, } from "vue-router";
 import Style from "@/views/admin/StyleView.vue";
 import HomePageLayout from '@/layouts/HomePageLayout.vue';
 import AdminHome from "@/views/admin/HomeView.vue";
+import i18n from '../i18n.js'
 
 const routes = [
   {
