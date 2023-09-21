@@ -2,11 +2,11 @@
   <div>
     <h1 class="text-[20px] font-bold text-[#344054] font-primary">User Profile</h1>
     <p class="py-[9px] text-[16px] font-primary">Verification / Account</p>
-    <div class="flex justify-between">
+    <div class="flex justify-between pr-8">
       <p class="text-[18px]">Subusers</p>
 
       <button
-        class="bg-[#E24949] text-white text-[14px] rounded-lg font-primary px-[7.5px] py-[12px]"
+        class="bg-[#E24949] text-white text-[14px] rounded-lg font-primary px-2 py-[12px]"
       >
         + Add New Users
       </button>
@@ -86,13 +86,15 @@
         </button>
       </div>
     </div>
-    <div class="flex pt-14">
-      <div class="w-[280px] mr-8">
+    <div class="w-full flex pt-14">
+      <div class="w-3/12 mr-8">
         <p class="font-primary text-[14px] font-medium text-[#344054]">Personal info</p>
-        <p class="font-primary text-[14px] text-[#344054]">Personal info</p>
+        <p class="font-primary text-[14px] text-[#344054]">
+          Update your photo and personal details
+        </p>
       </div>
-      <div class="w-full">
-        <div class="p-6">
+      <div class="w-9/12 pr-12">
+        <div class="border rounded-lg border-[#eaecf0] p-6">
           <div class="flex">
             <div class="flex flex-col w-full">
               <p class="font-primary text-[14px] pb-2 font-medium text-[#344054]">
@@ -124,6 +126,33 @@
               <p class="font-primary text-[14px] pb-2 font-medium text-[#344054]">
                 Email address
               </p>
+              <div
+                class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                >
+                  <path
+                    d="M17.5 17.5L14.5834 14.5833M16.6667 9.58333C16.6667 13.4954 13.4954 16.6667 9.58333 16.6667C5.67132 16.6667 2.5 13.4954 2.5 9.58333C2.5 5.67132 5.67132 2.5 9.58333 2.5C13.4954 2.5 16.6667 5.67132 16.6667 9.58333Z"
+                    stroke="#667085"
+                    stroke-width="1.66667"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <input
+                type="search"
+                id="default-search"
+                class="w-full p-4 font-primary pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-[16px]"
+                placeholder="Search"
+                required
+              />
+
               <input
                 type="text"
                 name="Password"

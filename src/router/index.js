@@ -132,14 +132,14 @@ const routes = [
     name: "ui",
     component: () => import("@/views/admin/UiView.vue"),
   },
-  {
-    meta: {
-      title: "Responsive layout",
-    },
-    path: "/responsive",
-    name: "responsive",
-    component: () => import("@/views/admin/auth/ResponsiveView.vue"),
-  },
+  // {
+  //   meta: {
+  //     title: "Responsive layout",
+  //   },
+  //   path: "/responsive",
+  //   name: "responsive",
+  //   component: () => import("@/views/admin/auth/ResponsiveView.vue"),
+  // },
   {
     meta: {
       title: "Login",

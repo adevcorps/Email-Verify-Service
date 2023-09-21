@@ -60,11 +60,13 @@
               </div>
             </div>
           </div>
-          <button
-            class="h-10 w-full bg-[#E24949] text-white text-[14px] rounded-lg font-semibold font-primary mb-4"
-          >
-            Sign in
-          </button>
+          <router-link to="/user" class="w-full">
+            <button
+              class="h-10 w-full bg-[#E24949] text-white text-[14px] rounded-lg font-semibold font-primary mb-4"
+            >
+              Sign in
+            </button>
+          </router-link>
           <p
             class="text-[#475467] font-primary text-[14px] font-semibold leading-5 w-full text-center"
           >
