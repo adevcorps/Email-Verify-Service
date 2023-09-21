@@ -105,7 +105,7 @@
                 name="Password"
                 placeholder="Enter your password"
                 value="asdfasdf"
-                class="flex py-2.5 px-3.5 self-stretch rounded-lg border border-solid shadow-sm font-primary text-[16px] w-full"
+                class="flex py-2.5 px-3.5 self-stretch rounded-lg border border-gray-300 font-primary text-[16px] w-full"
               />
             </div>
             <div class="flex flex-col w-full pl-6">
@@ -117,7 +117,7 @@
                 name="Password"
                 placeholder="Enter your password"
                 value="asdfasdf"
-                class="flex py-2.5 px-3.5 self-stretch rounded-lg border border-solid shadow-sm font-primary text-[16px] w-full"
+                class="flex py-2.5 px-3.5 self-stretch rounded-lg border border-gray-300 font-primary text-[16px] w-full"
               />
             </div>
           </div>
@@ -126,40 +126,37 @@
               <p class="font-primary text-[14px] pb-2 font-medium text-[#344054]">
                 Email address
               </p>
-              <div
-                class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="none"
+              <div class="relative w-full">
+                <div
+                  class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
                 >
-                  <path
-                    d="M17.5 17.5L14.5834 14.5833M16.6667 9.58333C16.6667 13.4954 13.4954 16.6667 9.58333 16.6667C5.67132 16.6667 2.5 13.4954 2.5 9.58333C2.5 5.67132 5.67132 2.5 9.58333 2.5C13.4954 2.5 16.6667 5.67132 16.6667 9.58333Z"
-                    stroke="#667085"
-                    stroke-width="1.66667"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="mail-01">
+                      <path
+                        id="Icon"
+                        d="M1.6665 5.8335L8.4706 10.5964C9.02158 10.982 9.29707 11.1749 9.59672 11.2496C9.86142 11.3156 10.1383 11.3156 10.403 11.2496C10.7026 11.1749 10.9781 10.982 11.5291 10.5964L18.3332 5.8335M5.6665 16.6668H14.3332C15.7333 16.6668 16.4334 16.6668 16.9681 16.3943C17.4386 16.1547 17.821 15.7722 18.0607 15.3018C18.3332 14.767 18.3332 14.067 18.3332 12.6668V7.3335C18.3332 5.93336 18.3332 5.2333 18.0607 4.69852C17.821 4.22811 17.4386 3.84566 16.9681 3.60598C16.4334 3.3335 15.7333 3.3335 14.3332 3.3335H5.6665C4.26637 3.3335 3.56631 3.3335 3.03153 3.60598C2.56112 3.84566 2.17867 4.22811 1.93899 4.69852C1.6665 5.2333 1.6665 5.93336 1.6665 7.3335V12.6668C1.6665 14.067 1.6665 14.767 1.93899 15.3018C2.17867 15.7722 2.56112 16.1547 3.03153 16.3943C3.56631 16.6668 4.26637 16.6668 5.6665 16.6668Z"
+                        stroke="#667085"
+                        stroke-width="1.66667"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                  </svg>
+                </div>
+                <input
+                  type="search"
+                  id="default-search"
+                  class="w-full p-4 font-primary pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-[16px]"
+                  placeholder="olivia@untitledui.com"
+                  required
+                />
               </div>
-              <input
-                type="search"
-                id="default-search"
-                class="w-full p-4 font-primary pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-[16px]"
-                placeholder="Search"
-                required
-              />
-
-              <input
-                type="text"
-                name="Password"
-                placeholder="Enter your password"
-                value="olivia@untitledui.com"
-                class="flex py-2.5 px-3.5 self-stretch rounded-lg border border-solid shadow-sm font-primary text-[16px] w-full"
-              />
             </div>
           </div>
           <div class="flex">
