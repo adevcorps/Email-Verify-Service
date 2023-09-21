@@ -426,12 +426,12 @@
           </div>
           <div class="w-2/12 flex flex-col max-md:w-full">
             <h3 class="font-primary text-white text-xl font-bold mb-5 max-md:mb-2 max-md:mt-5">Legal</h3>
-            <router-link to="/"  class="font-primary text-white opacity-60 text-md mb-2">Privacy Policy</router-link>
+            <router-link to="/policy"  class="font-primary text-white opacity-60 text-md mb-2">Privacy Policy</router-link>
             <router-link to="/"  class="font-primary text-white opacity-60 text-md mb-2">
               Terms of Services
             </router-link>
             <router-link to="/"  class="font-primary text-white opacity-60 text-md mb-2">Anti-Spam</router-link>
-            <router-link to="/"  class="font-primary text-white opacity-60 text-md mb-2">GDPR</router-link>
+            <router-link to="/gdpr"  class="font-primary text-white opacity-60 text-md mb-2">GDPR</router-link>
           </div>
           <div class="w-2/12 flex flex-col max-md:w-full">
             <h3 class="font-primary text-white text-xl font-bold mb-5 max-md:mb-2 max-md:mt-5">Social</h3>

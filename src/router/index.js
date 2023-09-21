@@ -72,6 +72,22 @@ const routes = [
         name: "Faq",
         component: () => import("@/views/user/FaqPage.vue"),
       },
+      {
+        meta: {
+          title: "Policy",
+        },
+        path: "/policy",
+        name: "policy",
+        component: () => import("@/views/user/Policy.vue"),
+      },
+      {
+        meta: {
+          title: "Gdpr",
+        },
+        path: "/gdpr",
+        name: "gdpr",
+        component: () => import("@/views/user/Gdpr.vue"),
+      },
     ]
   },
   {
