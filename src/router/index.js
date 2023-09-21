@@ -189,10 +189,26 @@ const routes = [
     component: () => import("@/views/admin/auth/PasswordReset.vue"),
   },
   {
-    path: "/user-profile",
-    component: () => import("@/views/user/dashboard/UserProfile.vue"),
+    path: "/user",
+    name: "user",
+    component: UserDashboardLayout,
+    children: [
+      {
+        path: "",
+        name: "profile",
+        component: () => import("@/views/user/dashboard/UserProfile.vue"),
+      },
+    ],
   },
-  { path: '/:pathMatch(.*)*', name: 'NotFound', component: () => import("@/views/admin/ErrorView.vue") },
+  // {
+  //   path: "/user-profile",
+  //   component: () => import("@/views/user/dashboard/UserProfile.vue"),
+  // },
+  {
+    path: "/:pathMatch(.*)*",
+    name: "NotFound",
+    component: () => import("@/views/admin/ErrorView.vue"),
+  },
   {
     meta: {
       title: "Error",
