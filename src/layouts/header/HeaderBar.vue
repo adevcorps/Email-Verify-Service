@@ -1,4 +1,3 @@
-
 <script setup>
 import { watch, ref, computed } from "vue";
 import { useI18n } from "vue-i18n";
@@ -37,7 +36,7 @@ const srcSubToggle = () => {
 
 const langToggle = () => {
   langSet.value = !langSet.value;
-};
+}
 </script>
 
 <template>
@@ -67,17 +66,14 @@ const langToggle = () => {
           class="flex flex-row items-center justify-between px-5 text-header-secondary max-lg:hidden"
         >
           <router-link to="/"
-            ><span
-              class="font-primary font-bold px-5 text-header-selected max-xl:px-0 max-xl:invisible"
-              >{{ $t("header.home") }}</span
-            ></router-link
+            ><span class="font-primary font-bold px-5 text-header-selected max-xl:px-0 max-xl:invisible">{{
+              $t("header.home")
+            }}</span></router-link
           >
           <a class="">
             <div class="w-full items-center justify-center">
               <div class="group cursor-pointer">
-                <div
-                  class="flex items-center justify-between space-x-5 bg-white px-4 max-xl:px-2"
-                >
+                <div class="flex items-center justify-between space-x-5 bg-white px-4 max-xl:px-2">
                   <a
                     class="menu-hover text-base font-primary font-bold flex items-center text-header-selected"
                     onClick=""
@@ -105,24 +101,20 @@ const langToggle = () => {
                   class="invisible absolute z-50 flex flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible"
                   onClick=""
                 >
-                  <router-link
-                    to="/domain-checker"
+                  <router-link to="/domain-checker"
                     class="my-1 block border-b border-gray-100 py-1 font-primary text-primary lg:mx-4 hover:text-hover md:mx-2"
                     >Domain Verifier</router-link
                   >
 
-                  <router-link
-                    to="/email-checker"
+                  <router-link to="/email-checker"
                     class="my-1 block border-b border-gray-100 py-1 font-primary lg:mx-4 text-primary hover:text-hover md:mx-2"
                     >Email Verifier</router-link
                   >
-                  <router-link
-                    to="/bulk-email-checker"
+                  <router-link to="/bulk-email-checker"
                     class="my-1 block border-b border-gray-100 py-1 font-primary lg:mx-4 text-primary hover:text-hover md:mx-2"
                     >Bulk Email Verifier
                   </router-link>
-                  <router-link
-                    to="/integration"
+                  <router-link to="/integration"
                     class="my-1 block border-b border-gray-100 py-1 font-primary lg:mx-4 text-primary hover:text-hover md:mx-2"
                     >Integration
                   </router-link>
@@ -133,9 +125,7 @@ const langToggle = () => {
           <a to="/">
             <div class="w-full items-center justify-center bg-gray-200">
               <div class="group cursor-pointer">
-                <div
-                  class="flex items-center justify-between space-x-5 bg-white px-5 max-xl:px-2"
-                >
+                <div class="flex items-center justify-between space-x-5 bg-white px-5 max-xl:px-2">
                   <a
                     class="menu-hover text-base font-primary font-bold text-primary flex items-center"
                     onClick=""
@@ -169,13 +159,11 @@ const langToggle = () => {
                     >Document</router-link
                   >
 
-                  <router-link
-                    to="api-doc"
+                  <router-link to="api-doc"
                     class="my-1 block border-b border-gray-100 py-1 font-primary text-primary lg:mx-4 text-gray-500 hover:text-hover md:mx-2"
                     >API Integration</router-link
                   >
-                  <router-link
-                    to="faq"
+                  <router-link to="faq"
                     class="my-1 block border-b border-gray-100 py-1 font-primary text-primary lg:mx-4 text-gray-500 hover:text-hover md:mx-2"
                     >FAQ
                   </router-link>
@@ -196,9 +184,7 @@ const langToggle = () => {
           <a class="">
             <div class="w-full items-center justify-center">
               <div class="group cursor-pointer">
-                <div
-                  class="flex items-center justify-between space-x-5 bg-white px-5 max-xl:px-2"
-                >
+                <div class="flex items-center justify-between space-x-5 bg-white px-5 max-xl:px-2">
                   <a
                     class="menu-hover text-base font-primary font-bold flex items-center text-header-selected"
                     onClick=""
@@ -229,6 +215,7 @@ const langToggle = () => {
                 >
                   <a
                     class="my-1 block border-b border-gray-100 py-1 font-base lg:mx-4 text-primary hover:text-hover md:mx-2"
+                    
                     @click="handleLocation('en')"
                     >English</a
                   >
@@ -250,16 +237,14 @@ const langToggle = () => {
         </div>
         <div class="py-5 max-lg:hidden">
           <router-link to="/login">
-            <button
-              class="px-5 font-bold font-primary hover:text-primary delay-150 duration-300 max-xl:px-2"
-            >
-              {{ $t("header.login") }}
-            </button>
+          <button
+            class="px-5 font-bold font-primary hover:text-primary delay-150 duration-300 max-xl:px-2"
+          >
+            {{ $t("header.login") }}
+          </button>
           </router-link>
           <router-link to="/register">
-            <button
-              class="py-2 px-8 bg-[#E24949] text-white rounded-full font-bold max-xl:px-4"
-            >
+            <button class="py-2 px-8 bg-[#E24949] text-white rounded-full font-bold max-xl:px-4">
               {{ $t("header.register") }}
             </button>
           </router-link>
@@ -267,11 +252,7 @@ const langToggle = () => {
       </div>
     </div>
   </div>
-  <div
-    class="navbar-menu relative z-50"
-    duration="700"
-    :class="showMenu ? 'flex' : 'hidden'"
-  >
+  <div class="navbar-menu relative z-50 " duration="700" :class="showMenu ? 'flex' : 'hidden'">
     <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
     <nav
       class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto"
@@ -348,8 +329,7 @@ const langToggle = () => {
               :class="productSub ? 'block' : 'hidden'"
             >
               <li>
-                <router-link
-                  to="/domain-checker"
+                <router-link to="/domain-checker"
                   class="font-primary flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                 >
                   Domain verifier
@@ -478,20 +458,20 @@ const langToggle = () => {
                       {{ $t("languages.en") }} &nbsp;
                       <span>
                         <svg
-                          class="w-4 h-4 text-gray-800 dark:text-white text-[12px]"
-                          aria-hidden="true"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 16 20"
-                        >
-                          <path
-                            stroke="currentColor"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M1 1v18M1 3.652v9c5.6-5.223 8.4 2.49 14-.08v-9c-5.6 2.57-8.4-5.143-14 .08Z"
-                          />
-                        </svg>
+                        class="w-4 h-4 text-gray-800 dark:text-white text-[12px]"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 16 20"
+                      >
+                        <path
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M1 1v18M1 3.652v9c5.6-5.223 8.4 2.49 14-.08v-9c-5.6 2.57-8.4-5.143-14 .08Z"
+                        />
+                      </svg>
                       </span>
                     </a>
                   </div>
@@ -513,14 +493,16 @@ const langToggle = () => {
               </li>
               <li>
                 <a
+                  
                   class="font-primary flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                   @click="handleLocation('pt')"
                 >
-                  Português
+                Português
                 </a>
               </li>
               <li>
                 <a
+                  
                   class="font-primary flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                   @click="handleLocation('es')"
                 >
@@ -534,18 +516,16 @@ const langToggle = () => {
       <div class="mt-auto">
         <div class="pt-6 flex flex-col">
           <router-link to="/login" class="w-full">
-            <button
-              class="w-full p-5 font-bold font-primary hover:text-primary delay-150 duration-300"
-            >
-              {{ $t("header.login") }}
-            </button>
+          <button
+            class="w-full p-5 font-bold font-primary hover:text-primary delay-150 duration-300"
+          >
+            {{ $t("header.login") }}
+          </button>
           </router-link>
           <router-link to="/register" class="w-full">
-            <button
-              class="w-full p-2 px-8 bg-[#E24949] text-white rounded-full font-bold"
-            >
-              {{ $t("header.register") }}
-            </button>
+          <button class="w-full p-2 px-8 bg-[#E24949] text-white rounded-full font-bold">
+            {{ $t("header.register") }}
+          </button>
           </router-link>
         </div>
         <p class="my-4 text-xs text-center text-gray-400">
