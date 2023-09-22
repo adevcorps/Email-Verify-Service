@@ -10,4 +10,9 @@ module.exports = {
   parserOptions: {
     ecmaVersion: "latest",
   },
+  rules:{
+    "vue/html-self-closing": "off",
+    "vue/singleline-html-element-content-newline": "off",
+    "vue/max-attributes-per-line": "off",
+  }
 };
