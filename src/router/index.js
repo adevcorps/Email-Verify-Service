@@ -1,7 +1,8 @@
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHistory, createWebHashHistory } from "vue-router";
 import HomePageLayout from "@/layouts/HomePageLayout.vue";
 import UserDashboardLayout from "@/layouts/UserDashboardLayout.vue";
 import AdminHome from "@/views/admin/HomeView.vue";
+import UserDomainVerifier from "@/views/user/dashboard/DomainValidator.vue";
 
 const routes = [
   {
@@ -198,7 +199,19 @@ const routes = [
         name: "profile",
         component: () => import("@/views/user/dashboard/UserProfile.vue"),
       },
+      {
+        path: "domain-verifier",
+        name: "Domain-Verifier",
+        component: UserDomainVerifier
+      },
+      {
+        path: "email-verifier",
+        name: "Email-Verifier",
+        component: () => import('@/views/user/dashboard/EmailVerifier.vue')
+      }
     ],
+
+
   },
   // {
   //   path: "/user-profile",
@@ -220,7 +233,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes,
   scrollBehavior(to, from, savedPosition) {
     return savedPosition || { top: 0 };

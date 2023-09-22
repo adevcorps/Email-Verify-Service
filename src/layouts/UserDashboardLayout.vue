@@ -3,14 +3,18 @@
     <aside class="pt-10 w-[270px] border-r-4 border-[#eeeeef]">
       <div class="flex flex-col">
         <div class="m-auto mb-[42px]">
-          <img src="@/assets/images/logo.png" width="138" />
+          <router-link to="/">
+            <img src="@/assets/images/logo.png" width="138" />
+          </router-link>
         </div>
         <RouterLink
           to="/user"
           class="flex items-center my-2 hover:text-[#E24949]"
+          :class="userProfile ? 'text-[#E24949]' : 'text-primary'"
           exact-active-class="border-r-4 border-[#E24949]"
           @mouseover="handleHover('User Profile')"
           @mouseleave="handleHover('')"
+          @click="changeCoverLetter('User Profile', 1)"
         >
           <div class="w-[48px] h-[48px] flex justify-center items-center">
             <svg
@@ -35,8 +39,10 @@
           to="/user/domain-verifier"
           exact-active-class="border-r-4 border-[#E24949]"
           class="flex items-center my-2 hover:text-[#E24949]"
+          :class="domainValidator ? 'text-[#E24949]' : 'text-primary'"
           @mouseover="handleHover('domain_verifier')"
           @mouseleave="handleHover('')"
+          @click="changeCoverLetter('Domain verifier', 2)"
         >
           <div class="w-[48px] h-[48px] flex justify-center items-center">
             <svg
@@ -59,7 +65,7 @@
           <p class="text-[16px] pl-1 font-primary font-medium">Domain Validator</p>
         </RouterLink>
         <RouterLink
-        to="/user/email-verifier"
+          to="/user/email-verifier"
           exact-active-class="border-r-4 border-[#E24949]"
           class="flex items-center my-2 hover:text-[#E24949]"
           @mouseover="handleHover('email_verifier')"
@@ -95,6 +101,7 @@
           class="flex items-center my-2 hover:text-[#E24949]"
           @mouseover="handleHover('Tokens')"
           @mouseleave="handleHover('')"
+          @click="changeCoverLetter('Tokens', 4)"
         >
           <div class="w-[48px] h-[48px] flex justify-center items-center">
             <svg
@@ -119,6 +126,7 @@
           class="flex items-center my-2 hover:text-[#E24949]"
           @mouseover="handleHover('Credit Balance')"
           @mouseleave="handleHover('')"
+          @click="changeCoverLetter('Credit Balance', 5)"
         >
           <div class="w-[48px] h-[48px] flex justify-center items-center">
             <svg
@@ -169,6 +177,7 @@
           class="flex items-center my-2 hover:text-[#E24949]"
           @mouseover="handleHover('Buy Credits')"
           @mouseleave="handleHover('')"
+          @click="changeCoverLetter('Buy Credits', 6)"
         >
           <div class="w-[48px] h-[48px] flex justify-center items-center">
             <svg
@@ -195,6 +204,7 @@
           class="flex items-center my-2 hover:text-[#E24949]"
           @mouseover="handleHover('Shopping Card')"
           @mouseleave="handleHover('')"
+          @click="changeCoverLetter('Shopping Card', 7)"
         >
           <div class="w-[48px] h-[48px] flex justify-center items-center">
             <svg
@@ -219,6 +229,7 @@
           class="flex items-center my-2 hover:text-[#E24949]"
           @mouseover="handleHover('Orders')"
           @mouseleave="handleHover('')"
+          @click="changeCoverLetter('Orders', 8)"
         >
           <div class="w-[48px] h-[48px] flex justify-center items-center">
             <svg
@@ -243,6 +254,7 @@
           class="flex items-center my-2 hover:text-[#E24949]"
           @mouseover="handleHover('Reports')"
           @mouseleave="handleHover('')"
+          @click="changeCoverLetter('Reports', 9)"
         >
           <div class="w-[48px] h-[48px] flex justify-center items-center">
             <svg
@@ -267,6 +279,7 @@
           class="flex items-center my-2 hover:text-[#E24949]"
           @mouseover="handleHover('Subscription')"
           @mouseleave="handleHover('')"
+          @click="changeCoverLetter('Subscription', 10)"
         >
           <div class="w-[48px] h-[48px] flex justify-center items-center">
             <svg
@@ -290,7 +303,7 @@
     <div class="flex flex-col w-full">
       <nav class="border-b-4 border-[#eeeeef] flex justify-between items-center px-7">
         <div class="pt-8 pb-3">
-          <h1 class="text-[30px] font-semibold">User Profile</h1>
+          <h1 class="text-[30px] font-semibold">{{ coverLetter }}</h1>
           <p class="text-[16px] font-normal">Welcome back, Olivia!</p>
         </div>
         <div class="flex">
@@ -375,7 +388,85 @@
 import { ref } from "vue";
 
 const hoverLink = ref(null);
+const coverLetter = ref("User Profile");
+
+const userProfile = ref(true);
+const domainValidator = ref(false);
+const emailVerifier = ref(false);
+const tokens = ref(false);
+const creditBalance = ref(false);
+const buyCredits = ref(false);
+const shoppingCard = ref(false);
+const orders = ref(false);
+const reports = ref(false);
+const subScription = ref(false);
+
 function handleHover(key) {
   hoverLink.value = key;
 }
+
+const changeCoverLetter = (newCover, key) => {
+  coverLetter.value = newCover;
+  changeVisitState(key);
+};
+
+const initializeState = () => {
+  userProfile.value = false;
+  domainValidator.value = false;
+  emailVerifier.value = false;
+  tokens.value = false;
+  creditBalance.value = false;
+  buyCredits.value = false;
+  shoppingCard.value = false;
+  orders.value = false;
+  reports.value = false;
+  subScription.value = false;
+};
+
+const changeVisitState = (_key) => {
+  switch (_key) {
+    case 1:
+      initializeState();
+      userProfile.value = true;
+      break;
+    case 2:
+      initializeState();
+      domainValidator.value = true;
+      break;
+    case 3:
+      initializeState();
+      domainValidator.value = true;
+      break;
+    case 4:
+      initializeState();
+      domainValidator.value = true;
+      break;
+    case 5:
+      initializeState();
+      domainValidator.value = true;
+      break;
+    case 6:
+      initializeState();
+      domainValidator.value = true;
+      break;
+    case 7:
+      initializeState();
+      domainValidator.value = true;
+      break;
+    case 8:
+      initializeState();
+      domainValidator.value = true;
+      break;
+    case 9:
+      initializeState();
+      domainValidator.value = true;
+      break;
+    case 8:
+      initializeState();
+      domainValidator.value = true;
+      break;
+    default:
+      break;
+  }
+};
 </script>
