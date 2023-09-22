@@ -19,11 +19,12 @@
             class="flex flex-row justify-center max-md:w-full max-xl:flex-col max-xl:mb-1"
           >
             <button
-              class="mx-2 flex items-center px-8  whitespace-nowrap rounded-full text-2xl font-semibold max-md:w-full max-md:px-3 max-md:text-center max-xl:mb-1 py-3 "
-              :class="fb ? 'bg-[#E24949] text-white' : 'border-2 border-[#E24949] text-badge'"
+              class="mx-2 flex items-center px-8 whitespace-nowrap rounded-full text-2xl font-semibold max-md:w-full max-md:px-3 max-md:text-center max-xl:mb-1 py-3"
+              :class="
+                fb ? 'bg-[#E24949] text-white' : 'border-2 border-[#E24949] text-badge'
+              "
               @click="toggleCard(0)"
             >
-
               <svg
                 width="31"
                 height="31"
@@ -95,8 +96,10 @@
               &nbsp; 1000, 2500, 5000
             </button>
             <button
-              class="mx-2 flex items-center px-8  whitespace-nowrap rounded-full text-2xl font-semibold max-md:w-full max-md:px-3 max-md:text-center max-xl:mb-1 py-3 "
-              :class="sb ? 'bg-[#E24949] text-white' : 'border-2 border-[#E24949] text-badge'"
+              class="mx-2 flex items-center px-8 whitespace-nowrap rounded-full text-2xl font-semibold max-md:w-full max-md:px-3 max-md:text-center max-xl:mb-1 py-3"
+              :class="
+                sb ? 'bg-[#E24949] text-white' : 'border-2 border-[#E24949] text-badge'
+              "
               @click="toggleCard(1)"
             >
               <svg
@@ -171,7 +174,9 @@
             </button>
             <button
               class="mx-2 flex items-center px-8 text-badge whitespace-nowrap rounded-full text-2xl font-semibold border-2 border-[#E24949] max-md:px-3 max-md:w-full max-md:text-[20px] max-md:mb-1 py-3 pricing-button"
-              :class="tb ? 'bg-[#E24949] text-white' : 'border-2 border-[#E24949] text-badge'"
+              :class="
+                tb ? 'bg-[#E24949] text-white' : 'border-2 border-[#E24949] text-badge'
+              "
               @click="toggleCard(2)"
             >
               <svg
@@ -250,7 +255,9 @@
           >
             <button
               class="mx-2 flex items-center px-8 text-badge whitespace-nowrap rounded-full text-2xl font-semibold border-2 border-[#E24949] max-md:px-3 max-md:w-full max-md:text-[18px] max-xl:mb-1 py-3 pricing-button"
-              :class="frb ? 'bg-[#E24949] text-white' : 'border-2 border-[#E24949] text-badge'"
+              :class="
+                frb ? 'bg-[#E24949] text-white' : 'border-2 border-[#E24949] text-badge'
+              "
               @click="toggleCard(3)"
             >
               <svg
@@ -325,7 +332,9 @@
             </button>
             <button
               class="mx-2 flex items-center px-8 text-badge whitespace-nowrap rounded-full text-2xl font-semibold border-2 border-[#E24949] max-md:px-3 max-md:w-full max-md:text-[22px] max-md:mb-1 py-3 pricing-button"
-              :class="fib ? 'bg-[#E24949] text-white' : 'border-2 border-[#E24949] text-badge'"
+              :class="
+                fib ? 'bg-[#E24949] text-white' : 'border-2 border-[#E24949] text-badge'
+              "
               @click="toggleCard(4)"
             >
               <svg
@@ -415,11 +424,13 @@
 
     <img
       src="../../assets/images/home/pricing/poly1.png"
-      class="absolute left-0 bottom-0 max-md:opacity-10 max-2xl:-z-1"
+      class="absolute left-0 bottom-0 max-md:opacity-0 max-2xl:-z-1"
+      v-show="props.imageShow"
     />
     <img
       src="../../assets/images/home/pricing/poly2.png"
-      class="absolute right-0 bottom-[-3%] max-md:opacity-10"
+      class="absolute right-0 bottom-[-3%] max-md:opacity-0"
+      v-show="props.imageShow"
     />
   </section>
 </template>
@@ -428,6 +439,7 @@
 import PricingCard from "./PricingCard.vue";
 import { ref } from "vue";
 import { defineComponent, reactive } from "vue";
+const props = defineProps(["imageShow"]);
 
 const pricingArray = [
   [
@@ -515,9 +527,8 @@ const selectedClass =
   "mx-2 flex items-center px-8 bg-[#E24949] whitespace-nowrap text-white rounded-full text-2xl font-semibold max-md:w-full max-xl:mb-1";
 const normalClass =
   "mx-2 flex items-center px-8 text-badge whitespace-nowrap rounded-full text-2xl font-semibold border-2 border-[#E24949] max-md:w-full max-md:px-3 max-md:text-center max-xl:mb-1";
-  
-var curPriceArray = ref(pricingArray[0]);
 
+var curPriceArray = ref(pricingArray[0]);
 
 var fb = ref(true);
 var sb = ref(false);
@@ -526,54 +537,48 @@ var frb = ref(false);
 var fib = ref(false);
 
 const toggleCard = (index) => {
-
-    switch (index) {
-      case 0:
-        fb.value = true;
-        sb.value = false;
-        tb.value = false;
-        frb.value = false;
-        fib.value = false;
-        break;
-      case 1:
-        sb.value = true;
-        fb.value = false;
-        tb.value = false;
-        frb.value = false;
-        fib.value = false;
-        console.log(sb);
-        break;
-      case 2:
-        tb.value = true;
-        fb.value = false;
-        sb.value = false;
-        frb.value = false;
-        fib.value = false;
-        break;
-      case 3:
-        frb.value = true;
-        fb.value = false;
-        sb.value = false;
-        tb.value = false;
-        fib.value = false;
-        break;
-      case 4:
-        fib.value = true;
-        fb.value = false;
-        sb.value = false;
-        tb.value = false;
-        frb.value = false;
-        break;
-      default:
-        break;
+  switch (index) {
+    case 0:
+      fb.value = true;
+      sb.value = false;
+      tb.value = false;
+      frb.value = false;
+      fib.value = false;
+      break;
+    case 1:
+      sb.value = true;
+      fb.value = false;
+      tb.value = false;
+      frb.value = false;
+      fib.value = false;
+      console.log(sb);
+      break;
+    case 2:
+      tb.value = true;
+      fb.value = false;
+      sb.value = false;
+      frb.value = false;
+      fib.value = false;
+      break;
+    case 3:
+      frb.value = true;
+      fb.value = false;
+      sb.value = false;
+      tb.value = false;
+      fib.value = false;
+      break;
+    case 4:
+      fib.value = true;
+      fb.value = false;
+      sb.value = false;
+      tb.value = false;
+      frb.value = false;
+      break;
+    default:
+      break;
   }
 
-  console.log(index)
-    curPriceArray.value = pricingArray[index];
-  };
-  
-  
-
-
- 
+  console.log(index);
+  curPriceArray.value = pricingArray[index];
+};
 </script>

@@ -1,7 +1,9 @@
 <template>
   <div>
-    <h1 class="text-[20px] font-bold text-[#344054] font-primary">User Profile</h1>
-    <p class="py-[9px] text-[16px] font-primary">Verification / Account</p>
+    <h1 class="text-[20px] font-bold text-[#344054] font-primary">Email Verifier</h1>
+    <p class="py-[9px] text-[16px] font-primary">
+      File upload / Paste Email List / Signle Email
+    </p>
     <div>
       <div class="inline-flex rounded-md shadow-sm" role="group">
         <button

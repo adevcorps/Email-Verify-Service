@@ -97,7 +97,7 @@
 
           <p class="text-[16px] pl-1 font-primary font-medium">Email Verifier</p>
         </RouterLink>
-        <RouterLink
+        <!-- <RouterLink
           to="/user/tokens"
           exact-active-class="border-r-4 border-[#E24949]"
           class="flex items-center my-2 hover:text-[#E24949]"
@@ -121,11 +121,12 @@
           </div>
 
           <p class="text-[16px] pl-1 font-primary font-medium">Tokens</p>
-        </RouterLink>
+        </RouterLink> -->
         <RouterLink
           to="/user/credit-balance"
           exact-active-class="border-r-4 border-[#E24949]"
           class="flex items-center my-2 hover:text-[#E24949]"
+          :class="creditBalance ? 'text-[#E24949]' : 'text-primary'"
           @mouseover="handleHover('Credit Balance')"
           @mouseleave="handleHover('')"
           @click="changeCoverLetter('Credit Balance', 5)"
@@ -177,6 +178,7 @@
           to="/user/buy-credits"
           exact-active-class="border-r-4 border-[#E24949]"
           class="flex items-center my-2 hover:text-[#E24949]"
+          :class="buyCredits ? 'text-[#E24949]' : 'text-primary'"
           @mouseover="handleHover('Buy Credits')"
           @mouseleave="handleHover('')"
           @click="changeCoverLetter('Buy Credits', 6)"
@@ -204,6 +206,7 @@
           to="/user/shopping-card"
           exact-active-class="border-r-4 border-[#E24949]"
           class="flex items-center my-2 hover:text-[#E24949]"
+          :class="shoppingCard ? 'text-[#E24949]' : 'text-primary'"
           @mouseover="handleHover('Shopping Card')"
           @mouseleave="handleHover('')"
           @click="changeCoverLetter('Shopping Card', 7)"
@@ -229,6 +232,7 @@
           to="/user/orders"
           exact-active-class="border-r-4 border-[#E24949]"
           class="flex items-center my-2 hover:text-[#E24949]"
+          :class="orders ? 'text-[#E24949]' : 'text-primary'"
           @mouseover="handleHover('Orders')"
           @mouseleave="handleHover('')"
           @click="changeCoverLetter('Orders', 8)"
@@ -445,25 +449,25 @@ const changeVisitState = (_key) => {
       break;
     case 5:
       initializeState();
-      domainValidator.value = true;
+      creditBalance.value = true;
       break;
     case 6:
       initializeState();
-      domainValidator.value = true;
+      buyCredits.value = true;
       break;
     case 7:
       initializeState();
-      domainValidator.value = true;
+      shoppingCard.value = true;
       break;
     case 8:
       initializeState();
-      domainValidator.value = true;
+      orders.value = true;
       break;
     case 9:
       initializeState();
       domainValidator.value = true;
       break;
-    case 8:
+    case 10:
       initializeState();
       domainValidator.value = true;
       break;
