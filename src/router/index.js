@@ -208,6 +208,36 @@ const routes = [
         path: "email-verifier",
         name: "Email-Verifier",
         component: () => import('@/views/user/dashboard/EmailVerifier.vue')
+      },
+      {
+        path: "credit-balance",
+        name: "Credit-Balance",
+        component: () => import('@/views/user/dashboard/CreditBalance.vue')
+      },
+      {
+        path: "buy-credits",
+        name: "Buy-Credit",
+        component: () => import('@/views/user/dashboard/BuyCredit.vue')
+      },
+      {
+        path: "buy-credits-detail",
+        name: "Buy-detail",
+        component: () => import('@/views/user/dashboard/BuyCreditDetails.vue')
+      },
+      {
+        path: "shopping-card",
+        name: "Shopping-Card",
+        component: () => import('@/views/user/dashboard/ShoppingCard.vue')
+      },
+      {
+        path: "shopping-card-pay",
+        name: "Shopping-pay",
+        component: () => import('@/views/user/dashboard/ShoppingPay.vue')
+      },
+      {
+        path: "orders",
+        name: "Orders",
+        component: () => import('@/views/user/dashboard/Orders.vue')
       }
     ],
 
