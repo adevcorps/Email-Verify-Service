@@ -141,11 +141,13 @@
           <div class="border border-gray-200 rounded-lg mb-6"></div>
         </div>
         <div class="border border-gray-200 rounded-lg my-6"></div>
-        <button
-          class="py-2.5 px-8 bg-[#E24949] text-white rounded-lg text-[18px] w-full font-semibold"
-        >
-          Pay Now
-        </button>
+        <router-link to="shopping-card-pay">
+          <button
+            class="py-2.5 px-8 bg-[#E24949] text-white rounded-lg text-[18px] w-full font-semibold"
+          >
+            Pay Now
+          </button>
+        </router-link>
         <div class="w-full flex flex-row items-center mt-5">
           <svg
             width="32"
