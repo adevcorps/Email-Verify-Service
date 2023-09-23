@@ -57,10 +57,26 @@
             </td>
             <td class="px-6 py-4">
               <span
-                class=" text-sm font-medium mr-2 px-2.5 py-0.5 rounded"
-                :class="`${data.active=='Subscriptions'?'bg-green-100 text-[#219653]':'bg-[#F2F4F7] text-[#344054]'}`"
-                >{{ data.active }}</span
+                class="text-sm font-medium mr-2 px-2.5 py-0.5 rounded"
+                :class="`${
+                  data.active == 'Subscriptions'
+                    ? 'bg-green-100 text-[#219653]'
+                    : 'bg-[#F2F4F7] text-[#344054]'
+                }`"
               >
+                <svg
+                  v-if="data.active == 'Subscriptions'"
+                  width="8"
+                  height="8"
+                  viewBox="0 0 8 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="inline"
+                >
+                  <circle cx="4" cy="4" r="3" fill="#219653" />
+                </svg>
+                {{ data.active }}
+              </span>
             </td>
             <td class="px-6 py-4">
               <div

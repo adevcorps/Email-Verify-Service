@@ -19,7 +19,6 @@
     "@vueform/multiselect": "^2.6.2",
     "apexcharts": "^3.42.0",
     "axios": "^0.27.0",
-    "chart.js": "^3.6.0",
     "flowbite-vue": "^0.0.17-next.10",
     "numeral": "^2.0.6",
     "pinia": "^2.0.13",
