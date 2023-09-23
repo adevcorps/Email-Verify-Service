@@ -230,6 +230,11 @@ const routes = [
         component: () => import('@/views/user/dashboard/ShoppingCard.vue')
       },
       {
+        path: "shopping-card-pay",
+        name: "Shopping-pay",
+        component: () => import('@/views/user/dashboard/ShoppingPay.vue')
+      },
+      {
         path: "orders",
         name: "Orders",
         component: () => import('@/views/user/dashboard/Orders.vue')
