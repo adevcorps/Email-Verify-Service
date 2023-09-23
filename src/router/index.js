@@ -223,6 +223,16 @@ const routes = [
         path: "buy-credits-detail",
         name: "Buy-detail",
         component: () => import('@/views/user/dashboard/BuyCreditDetails.vue')
+      },
+      {
+        path: "shopping-card",
+        name: "Shopping-Card",
+        component: () => import('@/views/user/dashboard/ShoppingCard.vue')
+      },
+      {
+        path: "orders",
+        name: "Orders",
+        component: () => import('@/views/user/dashboard/Orders.vue')
       }
     ],
 

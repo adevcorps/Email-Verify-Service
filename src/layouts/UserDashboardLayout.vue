@@ -206,6 +206,7 @@
           to="/user/shopping-card"
           exact-active-class="border-r-4 border-[#E24949]"
           class="flex items-center my-2 hover:text-[#E24949]"
+          :class="shoppingCard ? 'text-[#E24949]' : 'text-primary'"
           @mouseover="handleHover('Shopping Card')"
           @mouseleave="handleHover('')"
           @click="changeCoverLetter('Shopping Card', 7)"
@@ -231,6 +232,7 @@
           to="/user/orders"
           exact-active-class="border-r-4 border-[#E24949]"
           class="flex items-center my-2 hover:text-[#E24949]"
+          :class="orders ? 'text-[#E24949]' : 'text-primary'"
           @mouseover="handleHover('Orders')"
           @mouseleave="handleHover('')"
           @click="changeCoverLetter('Orders', 8)"
@@ -455,17 +457,17 @@ const changeVisitState = (_key) => {
       break;
     case 7:
       initializeState();
-      domainValidator.value = true;
+      shoppingCard.value = true;
       break;
     case 8:
       initializeState();
-      domainValidator.value = true;
+      orders.value = true;
       break;
     case 9:
       initializeState();
       domainValidator.value = true;
       break;
-    case 8:
+    case 10:
       initializeState();
       domainValidator.value = true;
       break;
