@@ -238,7 +238,17 @@ const routes = [
         path: "orders",
         name: "Orders",
         component: () => import('@/views/user/dashboard/Orders.vue')
-      }
+      },
+      {
+        path: "reports",
+        name: "Reports",
+        component: () => import('@/views/user/dashboard/Reports.vue')
+      },
+      {
+        path: "subscription",
+        name: "SubScription",
+        component: () => import('@/views/user/dashboard/SubScription.vue')
+      },
     ],
 
 
