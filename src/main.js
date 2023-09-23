@@ -1,6 +1,6 @@
 import { createApp } from "vue";
 import { createPinia } from "pinia";
-
+import VueApexCharts from "vue3-apexcharts";
 import App from "./App.vue";
 import router from "./router";
 import { useMainStore } from "@/stores/main.js";
@@ -18,6 +18,7 @@ createApp(App)
   .use(router)
   .use(i18n())
   .use(pinia)
+  .use(VueApexCharts)
   .mount("#app");
 
 /* Init Pinia stores */
