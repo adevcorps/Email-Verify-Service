@@ -208,6 +208,11 @@ const routes = [
         path: "email-verifier",
         name: "Email-Verifier",
         component: () => import('@/views/user/dashboard/EmailVerifier.vue')
+      },
+      {
+        path: "credit-balance",
+        name: "Credit-Balance",
+        component: () => import('@/views/user/dashboard/CreditBalance.vue')
       }
     ],
 

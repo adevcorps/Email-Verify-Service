@@ -68,8 +68,10 @@
           to="/user/email-verifier"
           exact-active-class="border-r-4 border-[#E24949]"
           class="flex items-center my-2 hover:text-[#E24949]"
+          :class="emailVerifier ? 'text-[#E24949]' : 'text-primary'"
           @mouseover="handleHover('email_verifier')"
           @mouseleave="handleHover('')"
+          @click="changeCoverLetter('Email Verifier', 3)"
         >
           <div class="w-[48px] h-[48px] flex justify-center items-center">
             <svg
@@ -435,7 +437,7 @@ const changeVisitState = (_key) => {
       break;
     case 3:
       initializeState();
-      domainValidator.value = true;
+      emailVerifier.value = true;
       break;
     case 4:
       initializeState();
