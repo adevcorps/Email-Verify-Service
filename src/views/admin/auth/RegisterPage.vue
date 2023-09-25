@@ -3,7 +3,6 @@
     <div class="h-screen overflow-auto w-full aside-scrollbars-light">
       <div class="flex px-2 flex-col justify-center self-stretch min-h-screen">
         <div class="flex max-w-[100%] w-[360px] flex-col items-start mx-auto my-6">
-        
           <router-link to="/">
             <img src="@/assets/images/logo.png" alt="logo" class="mb-20" />
           </router-link>
@@ -16,8 +15,8 @@
             First Name*
           </p>
           <input
-            type="email"
-            name="email"
+            type="text"
+            name="first-name"
             placeholder="Enter your name"
             value=""
             class="flex py-2.5 px-3.5 gap-2 self-stretch rounded-lg border border-solid shadow-sm text-[#475467] font-primary text-[16px]"
@@ -28,8 +27,8 @@
             Last Name*
           </p>
           <input
-            type="email"
-            name="email"
+            type="text"
+            name="last-name"
             placeholder="Enter your name"
             value=""
             class="flex py-2.5 px-3.5 gap-2 self-stretch rounded-lg border border-solid shadow-sm text-[#475467] font-primary text-[16px]"
@@ -55,26 +54,41 @@
             type="password"
             name="Password"
             placeholder="Create a password"
-            value="asdfasdf"
+            value=""
             class="flex py-2.5 px-3.5 gap-2 self-stretch rounded-lg border border-solid shadow-sm text-[#475467] font-primary text-[16px]"
+            @input="validatePassword"
+            v-validate="{
+              required: true,
+              min: 12,
+              max: 32,
+              regex: /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).*$/,
+            }"
           />
-          <p class="text-[#475467] font-primary text-[14px] font-normal leading-5 pt-1.5">
-            Must be at least 8 characters.
+          <p
+            class="text-[#E24949] font-primary text-[14px] font-normal leading-5 pt-1.5"
+            v-show="passwordVal"
+          >
+            * Password must be includes specal characters, lower & uppercase and numbers
+            and from 12 to 32 letters.
           </p>
           <p
             class="text-[#475467] font-primary text-[14px] font-medium leading-5 pb-1.5 pt-5"
           >
-            Confirm Password*
+            Confirm password*
           </p>
           <input
             type="password"
             name="Password"
-            placeholder="Create a password"
-            value="asdfasdf"
+            placeholder="Confirm password"
+            value=""
             class="flex py-2.5 px-3.5 gap-2 self-stretch rounded-lg border border-solid shadow-sm text-[#475467] font-primary text-[16px]"
+            @input="confirmValidation"
           />
-          <p class="text-[#475467] font-primary text-[14px] font-normal leading-5 pt-1.5">
-            Must be at least 8 characters.
+          <p
+            class="text-[#E24949] font-primary text-[14px] font-normal leading-5 pt-1.5"
+            v-show="confirmVal"
+          >
+            Must be same with password.
           </p>
           <div class="flex items-center self-stretch">
             <div class="flex items-start justify-between w-full">
@@ -3496,3 +3510,30 @@
     </div>
   </div>
 </template>
+<script setup>
+import { ref } from "vue";
+const passwordVal = ref(false);
+const confirmVal = ref(false);
+var password = "";
+
+const regex = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).*$/;
+const validatePassword = (e) => {
+  var matches = regex.exec(e.target.value);
+  var ltrPass = e.target.value;
+  var letterCount = ltrPass.length;
+  console.log(letterCount);
+  if (matches && letterCount >= 12 && letterCount <= 32) {
+    password = e.target.value;
+    passwordVal.value = false;
+  } else {
+    passwordVal.value = true;
+  }
+};
+const confirmValidation = (e) => {
+  if (e.target.value != password) {
+    confirmVal.value = true;
+  } else {
+    confirmVal.value = false;
+  }
+};
+</script>
