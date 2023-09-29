@@ -763,7 +763,7 @@
         </div>
         <div class="w-5/12 pr-12 relative px-16 py-8">
           <img
-            src="../../../assets/images/dashboard/Rectangle 4455.png"
+            src="../../../assets/images/dashboard/Rectangle_4455.png"
             class="absolute right-0 top-0 w-full -z-1"
           />
           <div class="flex items-center">
