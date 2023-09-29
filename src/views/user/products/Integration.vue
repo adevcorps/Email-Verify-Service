@@ -185,7 +185,7 @@
           <div
             class="bg-white flex items-center justify-center mx-auto rounded-full w-[184px] h-[184px] shadow-2xl mb-[22.82px]"
           >
-            <img src="@/assets/images/integration/icontact-logomark 1.png" />
+            <img src="@/assets/images/integration/icontact-logomark1.png" />
           </div>
           <p
             class="font-primary text-primary text-[30px] mx-auto leading-10 font-extrabold max-md:bottom-5 max-sm:bottom-0"
