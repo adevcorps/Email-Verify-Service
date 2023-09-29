@@ -17,12 +17,12 @@
             alt=""
           />
           <img
-            src="@/assets/images/home/domain-group/Polygon 7.png"
+            src="@/assets/images/home/domain-group/Polygon-7.png"
             class="absolute right-10 max-md:w-full"
             alt=""
           />
           <img
-            src="@/assets/images/home/domain-group/Polygon 8.png"
+            src="@/assets/images/home/domain-group/Polygon-8.png"
             class="absolute right-12 max-md:w-full"
             alt=""
           />
